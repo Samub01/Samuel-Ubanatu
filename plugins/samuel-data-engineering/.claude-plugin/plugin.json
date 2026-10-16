@@ -1,0 +1,7 @@
+{
+  "name": "samuel-data-engineering",
+  "version": "1.0.0",
+  "description": "dbt, Snowflake, Databricks, Postgres, MySQL and ClickHouse skills for building, testing, debugging and optimising data pipelines.",
+  "author": { "name": "Samuel Ubanatu" },
+  "repository": "https://github.com/Samub01/Samuel-Ubanatu"
+}
