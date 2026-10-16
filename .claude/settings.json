@@ -194,6 +194,17 @@
         ],
         "id": "post:dispatcher:async",
         "description": "Run background PostToolUse hooks in one process while preserving per-hook controls"
+      },
+      {
+        "matcher": "mcp__Gmail__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/post-triage-log.sh"
+          }
+        ],
+        "id": "post:chief-of-staff:triage-log",
+        "description": "Append /triage briefs to logs/weekly-log.md"
       }
     ],
     "PostToolUseFailure": [
@@ -318,6 +329,16 @@
         ],
         "id": "stop:desktop-notify",
         "description": "Send desktop notification (macOS/WSL) with task summary when Claude responds"
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/post-triage-log.sh"
+          }
+        ],
+        "id": "stop:chief-of-staff:triage-log",
+        "description": "Append /triage briefs to logs/weekly-log.md"
       }
     ],
     "SessionEnd": [

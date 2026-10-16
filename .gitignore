@@ -1,0 +1,3 @@
+# Chief-of-staff logs contain email and calendar content - local only, never commit
+logs/*
+!logs/.gitkeep
