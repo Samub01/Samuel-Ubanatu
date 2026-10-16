@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CODA UK &amp; Ireland</title>
+<meta name="description" content="CODA UK and Ireland CIC brings together children of Deaf adults of every age for peer support, social contact and a shared heritage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap">
+<style>
+/* Layout: a single readable column with full-width colour bands; the hero pairs the headline with a two-worlds diagram. */
+/* Palette drawn from the Deaf Flag: turquoise, blue and yellow. */
+:root {
+  --paper: #f4f8fa;
+  --surface: #ffffff;
+  --ink: #0f2340;
+  --muted: #4a5d75;
+  --line: #d3dde7;
+  --blue: #1f3fa3;
+  --teal: #0b7f7f;
+  --sun: #f6b81c;
+  --on-sun: #0f2340;
+  --on-blue: #ffffff;
+  --band: #e5f1f2;
+  --danger: #b42318;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Verdana", "Segoe UI", system-ui, sans-serif;
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.3rem;
+  --step-2: 1.75rem;
+  --step-3: clamp(2rem, 4.2vw, 2.75rem);
+  --step-4: clamp(2.5rem, 6.4vw, 4.5rem);
+  --radius: 14px;
+  --wrap: 72rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0b1526; --surface: #12203a; --ink: #e9f0f8; --muted: #a5b5c9; --line: #263a5e;
+    --blue: #8eaeff; --teal: #4fcfc4; --sun: #f6c142; --on-sun: #0b1526; --on-blue: #0b1526; --band: #10263a; --danger: #ff8a80;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0b1526; --surface: #12203a; --ink: #e9f0f8; --muted: #a5b5c9; --line: #263a5e;
+  --blue: #8eaeff; --teal: #4fcfc4; --sun: #f6c142; --on-sun: #0b1526; --on-blue: #0b1526; --band: #10263a; --danger: #ff8a80;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.08; text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: var(--step-3); }
+p { margin: 0; }
+a { color: var(--blue); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--sun); outline-offset: 3px; border-radius: 6px;
+}
+.skip { position: absolute; left: -999px; top: 8px; background: var(--sun); color: var(--on-sun); padding: 8px 14px; border-radius: 8px; z-index: 20; }
+.skip:focus { left: max(16px, env(safe-area-inset-left, 0px)); }
+
+.wrap {
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.eyebrow { font-size: var(--step--1); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); }
+
+/* Header */
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; line-height: 1.1; }
+.brand small { display: block; font-family: var(--font-body); font-weight: 400; font-size: 0.75rem; color: var(--muted); letter-spacing: 0.02em; }
+.mark { width: 34px; height: 34px; flex: none; }
+.nav { display: flex; align-items: center; gap: 4px; }
+.nav a { color: var(--ink); text-decoration: none; padding: 8px 12px; border-radius: 999px; font-size: 0.95rem; }
+.nav a:hover { background: var(--band); }
+.nav .bsl-chip { border: 2px solid var(--teal); color: var(--teal); font-weight: 700; }
+.nav .cta { background: var(--blue); color: var(--on-blue); font-weight: 700; }
+.nav .cta:hover { background: var(--blue); filter: brightness(1.1); }
+.menu { display: none; }
+@media (max-width: 860px) {
+  .nav { display: none; }
+  .menu { display: block; position: relative; }
+  .menu summary { list-style: none; cursor: pointer; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; font-weight: 700; }
+  .menu summary::-webkit-details-marker { display: none; }
+  .menu[open] .menu-panel { display: grid; }
+  .menu-panel {
+    display: none; position: absolute; right: 0; top: calc(100% + 8px); width: 230px; max-width: calc(100vw - 32px);
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px; gap: 2px;
+    box-shadow: 0 12px 30px rgb(0 0 0 / 0.14);
+  }
+  .menu-panel a { color: var(--ink); text-decoration: none; padding: 10px 12px; border-radius: 8px; }
+  .menu-panel a:hover { background: var(--band); }
+}
+
+/* Hero */
+.hero .wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; padding-block: 72px 64px; }
+.hero h1 { font-size: var(--step-4); font-weight: 800; }
+.hero h1 em { font-style: normal; color: var(--blue); }
+.hero .lede { font-size: var(--step-1); color: var(--muted); max-width: 36ch; margin-top: 20px; }
+.hero-copy { min-width: 0; }
+.hero-copy .eyebrow { margin-bottom: 14px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 22px; border-radius: 999px; font-weight: 700;
+  text-decoration: none; border: 2px solid transparent; font-size: 1rem; cursor: pointer; font-family: var(--font-body);
+  transition: transform 0.15s ease, filter 0.15s ease, background 0.15s ease;
+}
+.btn-primary { background: var(--sun); color: var(--on-sun); }
+.btn-primary:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.btn-ghost { border-color: var(--ink); color: var(--ink); background: transparent; }
+.btn-ghost:hover { background: var(--band); }
+
+.worlds { width: 100%; max-width: 440px; justify-self: center; margin: 0; }
+.worlds svg { width: 100%; height: auto; display: block; }
+.worlds figcaption { font-size: var(--step--1); color: var(--muted); text-align: center; margin-top: 8px; }
+.w-label { font-family: var(--font-display); font-weight: 700; font-size: 20px; }
+.w-sub { font-family: var(--font-body); font-size: 13px; }
+.w-mid { font-family: var(--font-display); font-weight: 800; font-size: 22px; }
+
+/* Facts strip */
+.facts { border-block: 1px solid var(--line); background: var(--surface); }
+.facts dl { display: grid; grid-template-columns: repeat(4, 1fr); margin: 0; }
+.facts dl > div { padding: 24px 20px; border-left: 1px solid var(--line); min-width: 0; }
+.facts dl > div:first-child { border-left: 0; padding-left: 0; }
+.facts dt { font-size: var(--step--1); color: var(--muted); }
+.facts dd { margin: 4px 0 0; font-family: var(--font-display); font-weight: 700; font-size: var(--step-2); font-variant-numeric: tabular-nums; line-height: 1.15; }
+.facts dd span { display: block; font-family: var(--font-body); font-weight: 400; font-size: var(--step--1); color: var(--muted); margin-top: 4px; }
+
+/* Sections */
+section.block { padding-block: 88px; }
+.section-head { display: grid; gap: 12px; max-width: 46rem; margin-bottom: 40px; }
+.section-head p:not(.eyebrow) { color: var(--muted); font-size: var(--step-1); }
+.band { background: var(--band); }
+
+.who { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.who-text { display: grid; gap: 18px; max-width: 62ch; min-width: 0; }
+.terms { display: grid; margin: 0; padding: 0; list-style: none; border-top: 2px solid var(--ink); min-width: 0; }
+.terms li { display: grid; grid-template-columns: 6.5rem 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.terms b { font-family: var(--font-display); font-size: var(--step-1); color: var(--blue); }
+.terms span { color: var(--muted); }
+.terms strong { color: var(--ink); display: block; }
+
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.card h3 { font-size: var(--step-1); }
+.card p { color: var(--muted); }
+.card .tag { font-size: var(--step--1); font-weight: 700; color: var(--teal); letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* Festival */
+.festival { background: var(--blue); color: var(--on-blue); }
+.festival .eyebrow { color: var(--sun); }
+.festival .section-head p:not(.eyebrow) { color: var(--on-blue); opacity: 0.85; }
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid color-mix(in srgb, var(--on-blue) 40%, transparent); }
+.timeline li { padding: 28px 24px 0 0; display: grid; gap: 6px; align-content: start; position: relative; min-width: 0; }
+.timeline li::before { content: ""; position: absolute; top: -9px; left: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--sun); }
+.timeline .when { font-family: var(--font-display); font-weight: 700; font-size: var(--step-2); font-variant-numeric: tabular-nums; }
+.timeline .where { font-weight: 700; }
+.timeline p { opacity: 0.85; }
+.timeline li.next::before { background: var(--blue); border: 3px solid var(--sun); }
+
+/* BSL */
+.bsl { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: center; }
+.video-slot {
+  aspect-ratio: 16 / 9; max-width: 100%; border-radius: var(--radius); border: 2px dashed var(--teal);
+  display: grid; place-items: center; text-align: center; padding: 24px; background: var(--surface); color: var(--muted);
+}
+.video-slot b { display: block; font-family: var(--font-display); font-size: var(--step-1); color: var(--ink); margin-bottom: 6px; }
+.bsl-text { display: grid; gap: 16px; max-width: 60ch; min-width: 0; }
+
+/* Join */
+.join { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: start; }
+.join-aside { display: grid; gap: 18px; min-width: 0; }
+.join-aside ul { margin: 0; padding-left: 1.2em; display: grid; gap: 8px; color: var(--muted); }
+form { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: grid; gap: 18px; min-width: 0; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.field { display: grid; gap: 6px; min-width: 0; }
+label, legend { font-weight: 700; font-size: 0.95rem; }
+input, select, textarea {
+  font: inherit; color: var(--ink); background: var(--paper); border: 1.5px solid var(--line); border-radius: 10px; padding: 12px 14px; width: 100%;
+}
+textarea { min-height: 110px; resize: vertical; }
+fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 10px; min-width: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips label { font-weight: 400; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1.5px solid var(--line); border-radius: 999px; cursor: pointer; background: var(--paper); }
+.chips input { width: auto; accent-color: var(--blue); }
+.chips label:has(input:checked) { border-color: var(--blue); background: var(--band); }
+.hint { font-size: var(--step--1); color: var(--muted); font-weight: 400; }
+.status { padding: 14px 16px; border-radius: 10px; background: var(--band); border-left: 4px solid var(--teal); }
+.error { color: var(--danger); font-size: var(--step--1); font-weight: 700; }
+
+/* Footer */
+footer { background: var(--surface); border-top: 1px solid var(--line); }
+footer .wrap { padding-block: 56px 40px; display: grid; gap: 32px; }
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
+.foot-grid > div { display: grid; gap: 10px; align-content: start; min-width: 0; }
+footer h3 { font-size: 1rem; }
+footer p, footer li { color: var(--muted); font-size: 0.95rem; }
+footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.legal { border-top: 1px solid var(--line); padding-top: 20px; font-size: var(--step--1); color: var(--muted); max-width: 80ch; }
+.flagbar { display: flex; height: 6px; }
+.flagbar i { flex: 1; }
+.flagbar i:nth-child(1) { background: #0b8a8a; }
+.flagbar i:nth-child(2) { background: #1f3fa3; }
+.flagbar i:nth-child(3) { background: #f6b81c; }
+
+@media (max-width: 860px) {
+  .hero .wrap, .who, .bsl, .join { grid-template-columns: 1fr; }
+  .hero .wrap { padding-block: 48px; gap: 32px; }
+  .worlds { max-width: 340px; }
+  .facts dl { grid-template-columns: repeat(2, 1fr); }
+  .facts dl > div:nth-child(3) { border-left: 0; padding-left: 0; }
+  .facts dl > div:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .cards, .timeline { grid-template-columns: 1fr; }
+  .timeline { border-top: 0; border-left: 2px solid color-mix(in srgb, var(--on-blue) 40%, transparent); gap: 28px; }
+  .timeline li { padding: 0 0 0 24px; }
+  .timeline li::before { top: 8px; left: -9px; }
+  .foot-grid { grid-template-columns: 1fr; }
+  section.block { padding-block: 64px; }
+}
+@media (max-width: 520px) {
+  .row { grid-template-columns: 1fr; }
+  .terms li { grid-template-columns: 1fr; gap: 4px; }
+  .facts dl > div { padding: 18px 12px 18px 0; }
+  .facts dl > div:nth-child(even) { padding-left: 12px; }
+  form, .card { padding: 20px; }
+  .actions .btn { flex: 1 1 100%; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="CODA UK and Ireland, home">
+      <svg class="mark" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="12.5" cy="17" r="10" fill="#0b8a8a"/>
+        <circle cx="21.5" cy="17" r="10" fill="#1f3fa3"/>
+        <path d="M17 8.8a10 10 0 0 1 0 16.4a10 10 0 0 1 0-16.4z" fill="#f6b81c"/>
+      </svg>
+      <span>CODA<small>UK &amp; Ireland CIC</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#who">Who's a CODA</a>
+      <a href="#what">What we do</a>
+      <a href="#festival">Festival</a>
+      <a class="bsl-chip" href="#bsl">BSL / ISL</a>
+      <a class="cta" href="#join">Join us</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="menu-panel" aria-label="Main (mobile)">
+        <a href="#who">Who's a CODA</a>
+        <a href="#what">What we do</a>
+        <a href="#festival">Festival</a>
+        <a href="#bsl">BSL / ISL</a>
+        <a href="#join">Join us</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Children of Deaf Adults</p>
+        <h1>Grew up between two worlds? <em>You're not the only one.</em></h1>
+        <p class="lede">CODA UK &amp; Ireland brings together people of every age who have one or both Deaf parents, so we can meet, support each other and celebrate the heritage we share.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#join">Join the community</a>
+          <a class="btn btn-ghost" href="#who">Am I a CODA?</a>
+        </div>
+      </div>
+      <figure class="worlds">
+        <svg viewBox="0 0 440 320" role="img" aria-labelledby="worlds-title">
+          <title id="worlds-title">Two overlapping circles, the Deaf world and the hearing world. CODAs live where they overlap.</title>
+          <circle cx="160" cy="160" r="128" fill="#0b8a8a"/>
+          <circle cx="280" cy="160" r="128" fill="#1f3fa3"/>
+          <path d="M220 46.4a128 128 0 0 1 0 227.2a128 128 0 0 1 0-227.2z" fill="#f6b81c"/>
+          <text x="100" y="154" text-anchor="middle" class="w-label" fill="#ffffff">Deaf</text>
+          <text x="100" y="176" text-anchor="middle" class="w-sub" fill="#e6fbfa">BSL · ISL</text>
+          <text x="340" y="154" text-anchor="middle" class="w-label" fill="#ffffff">Hearing</text>
+          <text x="340" y="176" text-anchor="middle" class="w-sub" fill="#e4eaff">English · Irish</text>
+          <text x="220" y="168" text-anchor="middle" class="w-mid" fill="#0f2340">CODA</text>
+        </svg>
+        <figcaption>Colours from the Deaf Flag: turquoise, blue and yellow.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="facts">
+    <div class="wrap">
+      <dl>
+        <div><dt>Running since</dt><dd>2011<span>Set up by CODAs, for CODAs</span></dd></div>
+        <div><dt>Where</dt><dd>UK &amp; Ireland<span>Nationwide, open to all</span></dd></div>
+        <div><dt>Who for</dt><dd>All ages<span>KODAs, teens and adults</span></dd></div>
+        <div><dt>Status</dt><dd>CIC<span>Community interest company</span></dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section class="block" id="who" aria-labelledby="who-h">
+    <div class="wrap who">
+      <div class="who-text">
+        <p class="eyebrow">Who's a CODA</p>
+        <h2 id="who-h">If one or both of your parents are Deaf, you're a CODA.</h2>
+        <p>It doesn't matter whether you sign fluently, a little, or not at all, or whether you are hearing or deaf yourself. Most CODAs are hearing, and many grew up interpreting phone calls, doctor's appointments and parents' evenings long before they could spell "interpreter".</p>
+        <p>That experience shapes people. CODAs often say they feel at home in both Deaf and hearing spaces, yet fully part of neither. Meeting others who just get it makes a real difference.</p>
+      </div>
+      <ul class="terms" aria-label="Words you might hear">
+        <li><b>CODA</b><span><strong>Child of Deaf Adult(s)</strong>Anyone, of any age, with at least one Deaf parent.</span></li>
+        <li><b>KODA</b><span><strong>Kid of Deaf Adult(s)</strong>Used for younger CODAs, usually under 18.</span></li>
+        <li><b>BSL</b><span><strong>British Sign Language</strong>The sign language of Deaf communities in the UK.</span></li>
+        <li><b>ISL</b><span><strong>Irish Sign Language</strong>The sign language of Deaf communities in Ireland.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block band" id="what" aria-labelledby="what-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What we do</p>
+        <h2 id="what-h">Contact, peer support and a heritage worth celebrating</h2>
+        <p>CODA UK &amp; Ireland was set up in 2011 so CODAs would have somewhere to find each other. Everything we run grows out of that.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">Peer support</span>
+          <h3>People who understand</h3>
+          <p>Talk with other CODAs about family, language brokering, identity and the things that are hard to explain to anyone who didn't grow up with them.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Social</span>
+          <h3>Meet-ups for every age</h3>
+          <p>Activities for KODAs, teenagers and adult CODAs, so nobody has to wait until adulthood to find their people.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Heritage</span>
+          <h3>Celebrating Deaf family culture</h3>
+          <p>Being raised in a Deaf family is a cultural inheritance. We mark it, share it, and make space for CODAs to be proud of it.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Research</span>
+          <h3>Adding CODA voices to the evidence</h3>
+          <p>We work with researchers, including University College Cork's study <i>CODA: A Hidden Minority Amongst the Majority</i>, funded by Research Ireland.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block festival" id="festival" aria-labelledby="fest-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">CODA Festival</p>
+        <h2 id="fest-h">Two days of CODAs in one place</h2>
+        <p>In 2024 Ireland held its first national CODA Festival at University College Cork: talks, workshops and plenty of time simply to be together.</p>
+      </div>
+      <ol class="timeline">
+        <li>
+          <span class="when">4–5 Oct 2024</span>
+          <span class="where">University College Cork</span>
+          <p>Ireland's first national CODA Festival.</p>
+        </li>
+        <li>
+          <span class="when">4–5 Oct 2025</span>
+          <span class="where">University College Cork</span>
+          <p>The festival returned for a second year, with a CODA conference alongside.</p>
+        </li>
+        <li class="next">
+          <span class="when">Next festival</span>
+          <span class="where">Dates to be announced</span>
+          <p>Join the community below and we'll tell you as soon as dates are set.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="bsl" aria-labelledby="bsl-h">
+    <div class="wrap bsl">
+      <div class="video-slot" role="note">
+        <div><b>BSL and ISL videos</b>Signed versions of this page will appear here.</div>
+      </div>
+      <div class="bsl-text">
+        <p class="eyebrow">In sign language</p>
+        <h2 id="bsl-h">This site should welcome Deaf parents as much as their children.</h2>
+        <p>Many families find us because a Deaf parent goes looking on their child's behalf. We're adding BSL and ISL videos for each section of this page, with captions on every video.</p>
+        <p class="hint">Can you help sign or caption? Tell us in the form below.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block band" id="join" aria-labelledby="join-h">
+    <div class="wrap join">
+      <div class="join-aside">
+        <p class="eyebrow">Get involved</p>
+        <h2 id="join-h">Join the CODA community</h2>
+        <p>Membership is open to CODAs of any age across the UK and Ireland. Parents can sign up on behalf of younger KODAs.</p>
+        <ul>
+          <li>Hear about meet-ups and the next festival first</li>
+          <li>Connect with CODAs near you</li>
+          <li>Help shape what we do next</li>
+        </ul>
+        <p class="hint">Deaf parents, interpreters, teachers and researchers are welcome to get in touch too.</p>
+      </div>
+
+      <form id="join-form" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <fieldset>
+          <legend>I'm getting in touch as</legend>
+          <div class="chips">
+            <label><input type="radio" name="role" id="role-coda" value="coda" checked> A CODA</label>
+            <label><input type="radio" name="role" id="role-parent" value="parent"> Parent of a KODA</label>
+            <label><input type="radio" name="role" id="role-deaf" value="deaf-parent"> A Deaf parent</label>
+            <label><input type="radio" name="role" id="role-pro" value="professional"> Professional or researcher</label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="region">Where are you based?</label>
+          <select id="region" name="region">
+            <option>England</option>
+            <option>Scotland</option>
+            <option>Wales</option>
+            <option>Northern Ireland</option>
+            <option>Republic of Ireland</option>
+            <option>Elsewhere</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Anything you'd like to tell us? <span class="hint">(optional)</span></label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <p class="error" id="form-error" role="alert" hidden></p>
+        <button class="btn btn-primary" type="submit">Send my details</button>
+        <p class="status" id="form-status" role="status" hidden></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="flagbar" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>CODA UK &amp; Ireland</h3>
+        <p>Social contact, peer support and celebration for children of Deaf adults since 2011.</p>
+      </div>
+      <div>
+        <h3>On this page</h3>
+        <ul>
+          <li><a href="#who">Who's a CODA</a></li>
+          <li><a href="#what">What we do</a></li>
+          <li><a href="#festival">CODA Festival</a></li>
+          <li><a href="#join">Join us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Wider CODA family</h3>
+        <ul>
+          <li><a href="https://coda-international.org" rel="noopener">CODA International</a></li>
+          <li><a href="https://www.ucc.ie/en/coda" rel="noopener">CODA research at UCC</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">CODA UK and Ireland CIC is a community interest company limited by guarantee, registered in England and Wales, company number 08284195. Registered office: 13 Freeland Park, Poole Road, Lytchett Matravers, Poole, Dorset BH16 6AF.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById('join-form');
+  var err = document.getElementById('form-error');
+  var status = document.getElementById('form-status');
+  // Set data-endpoint on the form to a form backend URL (e.g. Formspree) when the site goes live.
+  var endpoint = form.getAttribute('data-endpoint') || '';
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    err.hidden = true;
+    status.hidden = true;
+    var name = form.elements.name.value.trim();
+    var email = form.elements.email.value.trim();
+    if (!name) { return fail('Add your name so we know who to reply to.', form.elements.name); }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { return fail('Enter an email address like name@example.com.', form.elements.email); }
+
+    if (!endpoint) {
+      status.textContent = 'Thanks, ' + name + '. Sign-ups aren’t switched on yet, so your details haven’t been sent anywhere.';
+      status.hidden = false;
+      return;
+    }
+    fetch(endpoint, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) })
+      .then(function (r) {
+        if (!r.ok) { throw new Error('HTTP ' + r.status); }
+        form.reset();
+        status.textContent = 'Thanks, ' + name + '. We’ve got your details and will be in touch.';
+        status.hidden = false;
+      })
+      .catch(function () { fail('We couldn’t send that just now. Check your connection and try again.'); });
+  });
+
+  function fail(msg, field) {
+    err.textContent = msg;
+    err.hidden = false;
+    if (field) { field.focus(); }
+  }
+})();
+</script>
+</body>
+</html>
