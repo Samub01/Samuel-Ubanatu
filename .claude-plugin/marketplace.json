@@ -1,0 +1,16 @@
+{
+  "name": "samuel-ubanatu",
+  "owner": {
+    "name": "Samuel Ubanatu"
+  },
+  "plugins": [
+    {
+      "name": "samuel-skills",
+      "source": "./plugins/samuel-skills",
+      "description": "All skills from Samuel Ubanatu's Claude Code setup, as one plugin."
+    }
+  ],
+  "metadata": {
+    "description": "Samuel Ubanatu's Claude Code skills, packaged as one plugin."
+  }
+}
