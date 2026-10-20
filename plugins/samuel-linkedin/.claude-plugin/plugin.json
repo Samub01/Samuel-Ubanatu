@@ -1,0 +1,7 @@
+{
+  "name": "samuel-linkedin",
+  "version": "1.0.0",
+  "description": "LinkedIn posts, comments, replies, DMs, profile scoring and planning in Samuel's voice, plus email replies.",
+  "author": { "name": "Samuel Ubanatu" },
+  "repository": "https://github.com/Samub01/Samuel-Ubanatu"
+}
