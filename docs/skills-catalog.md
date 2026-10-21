@@ -1,0 +1,495 @@
+# Samuel Ubanatu — Skills Catalog
+
+Reference list of the 442 skills installed in github.com/Samub01/Samuel-Ubanatu (generated 2026-10-21).
+
+## How to use this in Claude chat
+
+- These skills run natively in Claude Code (and Cowork, via the samuel-* plugins). In chat, this file tells Claude what methods and playbooks exist.
+- Ask by name or topic, e.g. *"Use the approach of the `iso42001` skill to gap-assess our AI management system"* or *"Which of my skills fits a DPIA?"*
+- Claude in chat sees only the one-line summaries below, not each skill's full instructions. For full fidelity, upload the specific skill (Customize → Skills) or use Claude Code / Cowork.
+- Skills marked *(CLI)* rely on command-line tools or network access and won't run in chat.
+
+## Contents
+
+- GRC & compliance frameworks (36)
+- Research & academic writing (16)
+- LinkedIn & email (your voice) (12)
+- Data engineering (dbt, Snowflake, Databricks) (13)
+- Obsidian & notes (6)
+- Marketing psychology (1)
+- Diagrams (anatomy) (1)
+- OmniRoute AI gateway (needs an OmniRoute server) (45)
+- ECC — engineering, agents, business & operations (312)
+
+## GRC & compliance frameworks (36)
+
+- **ccpa** — California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) compliance advisor — business threshold analysis, consumer rights fulfillment (access, delete, correct, opt-out of sale/sharing, limit SPI, ADMT opt-out), pr…
+- **cis-controls** — Expert CIS Controls v8 (CIS Top 18) advisor — implementation group scoping (IG1/IG2/IG3), control gap assessments, safeguard-level guidance, asset inventory, software inventory, data protection, secure configuration, account management, …
+- **cmmc** — Expert CMMC 2.0 (Cybersecurity Maturity Model Certification) advisor for US defense contractors and subcontractors in the Defense Industrial Base (DIB).
+- **csrd** — Expert CSRD (Corporate Sustainability Reporting Directive, EU 2022/2464) compliance advisor.
+- **cyber-essentials** — Expert UK Cyber Essentials and Cyber Essentials Plus advisor — the NCSC-owned, IASME-delivered baseline certification.
+- **dora** — Expert DORA (Regulation (EU) 2022/2554 — Digital Operational Resilience Act) compliance advisor for EU financial entities.
+- **dpdpa** — Expert India Digital Personal Data Protection Act, 2023 (DPDPA) compliance advisor.
+- **ear** — Export Administration Regulations (EAR, 15 CFR Parts 730-774) compliance advisor — ECCN classification across all 10 CCL categories and 5 product groups (A-E), EAR99 determination, jurisdiction analysis (EAR vs ITAR order of review), lic…
+- **eu-ai-act** — EU AI Act (Regulation (EU) 2024/1689) compliance advisor — risk classification across all four tiers, all 9 prohibited practices (Art.
+- **eu-cra** — Expert EU Cyber Resilience Act (CRA) advisor for Regulation (EU) 2024/2847 — mandatory cybersecurity and vulnerability handling requirements for all products with digital elements (PDEs) sold in the EU.
+- **fedramp** — Expert guidance for FedRAMP certification and compliance under CR26 (FedRAMP Consolidated Rules for 2026).
+- **gdpr-compliance** — Expert GDPR compliance assistant covering all four core workflows: (1) auditing code and systems for GDPR violations, (2) drafting GDPR-compliant documents such as privacy policies, Data Processing Agreements (DPAs), and consent notices,…
+- **hipaa-compliance-grc** — Expert HIPAA compliance assistant for healthcare and software contexts.
+- **ism** — Expert Australian Information Security Manual (ISM) advisor for government entities and their supply chains.
+- **iso27001** — Expert ISO 27001 compliance assistant for security and compliance teams.
+- **iso27701** — Expert ISO 27701 Privacy Information Management System (PIMS) compliance advisor.
+- **iso42001** — Expert ISO 42001 AI Management System (AIMS) compliance advisor.
+- **itar** — Expert ITAR compliance advisor for US defense contractors, exporters, and manufacturers.
+- **lgpd** — Expert LGPD compliance advisor for Brazil's Lei Geral de Proteção de Dados (Law 13,709/2018).
+- **nis2** — EU NIS2 Directive (Directive (EU) 2022/2555) compliance advisor for essential and important entities: entity classification, Art.
+- **nist-800-53** — NIST SP 800-53 Rev 5 compliance advisor — all 20 control families (AC, AT, AU, CA, CM, CP, IA, IR, MA, MP, PE, PL, PM, PS, PT, RA, SA, SC, SI, SR), Low/Moderate/High baseline selection, FIPS 199/200 system categorization, control tailori…
+- **nist-ai-rmf** — Expert NIST AI Risk Management Framework (AI RMF 1.0) advisor covering all four functions: GOVERN, MAP, MEASURE, MANAGE.
+- **nist-csf** — Expert NIST Cybersecurity Framework (CSF) advisor covering CSF 2.0 and CSF 1.1.
+- **nzism** — Expert New Zealand Information Security Manual (NZISM) advisor for NZ government agencies and their supply chains.
+- **pci-compliance** — Expert PCI DSS compliance advisor covering PCI DSS v4.0.1 (current) and v4.0.
+- **saudi-arabia-grc** — Saudi Arabia Governance, Risk & Compliance advisor — a compliance router that first determines WHICH Saudi regulations apply (NCA ECC-2:2024, Saudi PDPL, NCA Cloud Cybersecurity Controls, SAMA Cyber Security Framework, CST cloud framewor…
+- **section-508** — Expert Section 508 compliance advisor for US federal ICT accessibility.
+- **soc2** — Expert SOC 2 compliance assistant covering all five Trust Services Criteria (Security/CC, Availability/A, Confidentiality/C, Processing Integrity/PI, Privacy/P).
+- **sox-itgc** — Expert SOX IT General Controls (ITGC) advisor for finance, internal audit and IT compliance teams.
+- **swift-csp** — Expert SWIFT Customer Security Programme (CSP) advisor covering the Customer Security Controls Framework (CSCF v2026).
+- **tisax** — Expert TISAX (Trusted Information Security Assessment Exchange) advisor for the automotive supply chain — the ENX/VDA assessment regime that OEMs like VW, BMW, and Mercedes-Benz require from suppliers and service providers.
+- **tprm** — Expert third-party risk management (TPRM) advisor — a vendor risk analyst for the full lifecycle: risk-based vendor tiering, tailored due-diligence questionnaires (SIG-style or mapped to ISO 27001, SOC 2, DORA, NIS2, HIPAA), SOC 2 Type I…
+- **tsa-compliance** — Expert TSA cybersecurity compliance advisor for critical infrastructure owners and operators.
+- **uae-grc** — United Arab Emirates Governance, Risk & Compliance advisor — a jurisdiction-first compliance router.
+- **vn-pdpl** — Expert Vietnam Personal Data Protection Law (PDPL) compliance advisor for Law No.
+- **wcag** — Expert WCAG (Web Content Accessibility Guidelines) advisor covering WCAG 2.0, 2.1, and 2.2 — the W3C international accessibility standards.
+
+## Research & academic writing (16)
+
+- **citation-formatter** — Format citations and bibliographies in any major academic style — APA 7, MLA 9, Chicago (notes-bibliography and author-date), Harvard, Vancouver, IEEE, AMA, and discipline-specific journal styles.
+- **data-analysis** — End-to-end quantitative data work — cleaning, exploration, statistical testing, modeling, visualization, and reproducible scripting in Python or R.
+- **ethics-committee** — Act as a research ethics committee — stress-test a protocol the way an IRB / REC / HREC would.
+- **grant-writer** — Draft sections of a grant proposal — specific aims / lay summary / significance / innovation / approach / broader impacts / budget justification / data management plan / biosketch — adapted to the funder's format and review criteria.
+- **last30days** *(CLI)* — Research what people actually say about any topic in the last 30 days.
+- **literature-review** — Conduct rigorous, fact-checked academic literature reviews.
+- **manuscript-drafter** — Draft long-form manuscript sections — abstract, introduction, related work, methods, results, discussion, limitations, conclusion — from a methodology document and an analysis report.
+- **methodology-advisor** — Advise on quantitative and qualitative research methodology — design, sampling, validity, reliability, measurement, ethics, analysis plan, and — mandatory in every methodology output — creative AI / ML / Big Data extensions tailored to t…
+- **peer-review** — A two-mode skill for rigorous academic critique.
+- **qualitative-coding** — Code qualitative data — interview transcripts, open-ended survey responses, field notes, documents, social media — using inductive, deductive, or hybrid approaches.
+- **replication-designer** — Design a direct, conceptual, or generalization replication of a published study.
+- **research-brainstorm** — Generate, sharpen, and pressure-test research ideas — research questions, hypotheses, study angles, novel contributions, and contrarian framings.
+- **reviewer-response** — Draft a rigorous, polite, point-by-point response to reviewer comments on a journal or conference submission (R1 / R2 / R3 letters), plus the corresponding manuscript revisions.
+- **survey-design** — Design rigorous surveys and questionnaires — question wording, response scales, ordering, validation, pilot testing, and translation.
+- **talk-builder** — Turn a paper (or several, a thesis, a body of work) into an academic talk — outline, per-slide content, speaker notes, opening hook, single take-home message, backup slides for Q&A, rehearsal plan.
+- **vault** — Manage the research project's vault — the clean, visible, templated project folder (research/<project>/) where every file lives in a numbered lifecycle-stage place, plus the knowledge layer (canonical facts like sample size / IRB# / jour…
+
+## LinkedIn & email (your voice) (12)
+
+- **email-reply** — Draft a reply to an email in Samuel's voice — direct, concise, relationship-aware
+- **li-audit** — Post-mortem on what the user has already published - which posts actually worked, why, and what to stop doing.
+- **li-carousel** — Build a LinkedIn document post (carousel) - slide-by-slide copy, the cover that earns the swipe, and the PDF to upload.
+- **li-comment** — Write comments on other people's LinkedIn posts that read as a person with an opinion, not a bot.
+- **li-dm** — Write connection notes and DM follow-ups that get replies - the 200-character invite, the first message, and the two follow-ups.
+- **li-human** *(CLI)* — Strip the machine fingerprint out of any draft - em dashes, AI slop words, invisible watermark characters - and score it against a five-check detection panel before it goes out.
+- **li-inbox** — Triage the LinkedIn inbox - sort connection requests and DMs into leads, recruiters, peers and spam, and draft the replies worth sending.
+- **li-plan** — Build the week on LinkedIn - what to post, when to post it, and who to engage with.
+- **li-post** — Write a LinkedIn post from a raw idea using 21 proven hook formulas, in the user's own voice, humanized so it does not read as AI.
+- **li-profile** — Score a LinkedIn profile out of 100 against a 12-part rubric and rewrite the parts that lose points - headline, about, experience, featured, banner.
+- **li-reply** — Handle the replies under the user's own LinkedIn posts - draft answers to every comment, sorted by which ones are worth answering.
+- **li-repurpose** — Turn one long asset - a YouTube video, podcast, newsletter, blog post, transcript or client call - into a week of LinkedIn posts.
+
+## Data engineering (dbt, Snowflake, Databricks) (13)
+
+- **altimate-code** *(CLI)* — altimate-code is a CLI AI agent that ships with native data engineering tools.
+- **creating-dbt-models** — Creates dbt models following project conventions.
+- **debugging-dbt-errors** — Debugs and fixes dbt errors systematically.
+- **developing-incremental-models** — Develops and troubleshoots dbt incremental models.
+- **documenting-dbt-models** — Documents dbt models and columns in schema.yml.
+- **finding-expensive-queries** — Finds and ranks expensive Snowflake queries by cost, time, or data scanned.
+- **migrating-sql-to-dbt** — Converts legacy SQL to modular dbt models.
+- **optimizing-databricks-sql** — Analyze DBSQL queries, including SQL embedded in notebooks (`spark.sql(...)`, `%sql` cells), for anti-patterns, lint issues, and performance problems, using Databricks-specific dialect and platform knowledge (Delta, Photon, Unity Catalog…
+- **optimizing-query-by-id** — Optimizes Snowflake query performance using query ID from history.
+- **optimizing-query-text** — Optimizes Snowflake SQL query performance from provided query text.
+- **refactoring-dbt-models** — Safely refactors dbt models with downstream impact analysis.
+- **snowflake-dbt-model-refactoring** — Refactor a bloated dbt model on Snowflake safely and produce a quantified before/after report that explains **which qualities improved and why** — not just raw deltas.
+- **testing-dbt-models** — Adds schema tests and data quality validation to dbt models.
+
+## Obsidian & notes (6)
+
+- **defuddle** *(CLI)* — Extract clean Markdown from HTML pages with Defuddle CLI.
+- **json-canvas** — Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections.
+- **knap** *(CLI)* — Render Markdown from templates and structured data using Knap CLI.
+- **obsidian-bases** — Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries.
+- **obsidian-cli** *(CLI)* — Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more.
+- **obsidian-markdown** — Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax.
+
+## Marketing psychology (1)
+
+- **marketing-psychology** — When the user wants to apply psychological principles, mental models, or behavioral science to marketing.
+
+## Diagrams (anatomy) (1)
+
+- **anatomy** *(CLI)* — Build crafted, highly detailed, interactive isometric SVG figures that explain a technical idea as a real physical object (a test rig, a dial gauge, a cabinet of drawers, a plotter, a lock), with many small precise solid parts, four-tone…
+
+## OmniRoute AI gateway (needs an OmniRoute server) (45)
+
+- **cli-a2a** *(CLI)* — Interact with the OmniRoute A2A server from the CLI.
+- **cli-backup-sync** *(CLI)* — Backup and restore OmniRoute data from the CLI.
+- **cli-batches** *(CLI)* — Submit and monitor batch inference jobs from the CLI.
+- **cli-chat** *(CLI)* — Send chat completions, stream responses, and start an interactive REPL session from the CLI.
+- **cli-compression** *(CLI)* — Configure and test prompt compression from the CLI.
+- **cli-contexts** *(CLI)* — Manage context engineering configurations, RTK filter sets, and conversation sessions from the CLI.
+- **cli-cost-usage** *(CLI)* — View cost breakdowns, token usage, and call logs from the CLI.
+- **cli-eval** *(CLI)* — Create and run evaluation suites, watch live benchmark progress, view scorecards, compare model performance, and integrate eval runs with CI workflows from the CLI.
+- **cli-health** *(CLI)* — Check server health, component status, and live metrics from the CLI.
+- **cli-keys** *(CLI)* — Create, list, rotate, and revoke OmniRoute API keys from the CLI.
+- **cli-mcp** *(CLI)* — Inspect the MCP server status, list registered tools and scopes, run tool invocations, and manage MCP audit logs from the CLI.
+- **cli-models** *(CLI)* — Query available AI models, list model aliases, and browse the full model catalog from the CLI.
+- **cli-plugins-skills** *(CLI)* — Manage Omni Skills (list, install, test, remove), plugins (create, configure), and persistent memory (search, add, clear) from the CLI.
+- **cli-policy-audit** *(CLI)* — Inspect audit logs, manage access policies, view telemetry data, and review request history from the CLI.
+- **cli-providers** *(CLI)* — Manage provider connections from the CLI: list available/configured providers, add, test, test-all, validate, rotate API keys, and view per-provider metrics.
+- **cli-resilience** *(CLI)* — Inspect and manage circuit-breaker states, connection cooldowns, quota limits, and backoff levels from the CLI.
+- **cli-routing** *(CLI)* — Create, list, update, and delete routing combos from the CLI.
+- **cli-serve** *(CLI)* — Start, stop, and restart the OmniRoute server from the CLI.
+- **cli-setup** *(CLI)* — Run initial setup, configure global CLI settings, manage environment variables, check for updates, and configure autostart via the CLI setup and config commands.
+- **cli-skill-collector** *(CLI)* — Detect installed CLI coding tools (Claude Code, Codex, Cursor, Copilot, Cline and more), search GitHub for matching agent skills, and install them to the detected tools via OmniRoute's built-in APIs.
+- **cli-tunnel** *(CLI)* — Start and stop tunnel connections (ngrok, Cloudflare, custom) from the CLI.
+- **config-codex-cli** *(CLI)* — Step-by-step agent workflow to configure the OpenAI Codex CLI on any machine (Linux, macOS, Windows) to use OmniRoute as an OpenAI-compatible backend.
+- **omni-agents-a2a** *(CLI)* — Interact with OmniRoute via JSON-RPC 2.0 agent-to-agent protocol.
+- **omni-api-keys** *(CLI)* — Create, list, rotate, and revoke OmniRoute API keys.
+- **omni-auth** *(CLI)* — Manage API key authentication and session tokens.
+- **omni-budget** *(CLI)* — Configure spending limits, token quotas, and rate-limit policies per API key or globally.
+- **omni-cache** *(CLI)* — Manage the LLM response cache.
+- **omni-cli-tools** *(CLI)* — Manage CLI tool integrations exposed via the API.
+- **omni-combos-routing** *(CLI)* — Create and manage routing combos with 19 strategies (priority, weighted, round-robin, Auto-combo, and more).
+- **omni-compression** *(CLI)* — Configure RTK (command output), Caveman (prose), and stacked compression modes.
+- **omni-context-rtk** *(CLI)* — Configure RTK filters, context engineering rules, and context relay settings.
+- **omni-db-backups** *(CLI)* — Trigger system backups, restore from backup files, and manage the SQLite database lifecycle.
+- **omni-github-skills** *(CLI)* — Search, score, scan, and import agent skills from GitHub repositories that contain SKILL.md, CLAUDE.md, .cursorrules, and similar agent skill files.
+- **omni-inference** *(CLI)* — The core OpenAI-compatible inference endpoints: chat completions, embeddings, images, audio (TTS/STT), moderations, rerank, and the Responses API.
+- **omni-mcp** *(CLI)* — Connect to the OmniRoute MCP server (110 tools, 3 transports: SSE/stdio/HTTP).
+- **omni-models** *(CLI)* — Query available AI models across all configured providers.
+- **omni-providers** *(CLI)* — Manage provider connections, API keys, OAuth flows, and connection tests via the REST API.
+- **omni-proxies** *(CLI)* — Configure HTTP/HTTPS/SOCKS proxies for upstream provider requests.
+- **omni-resilience** *(CLI)* — Monitor provider health, circuit-breaker states, p50/p95/p99 latency metrics, and budget guard alerts.
+- **omni-settings** *(CLI)* — Read and update global application settings: system prompts, thinking budget, IP filters, payload rules, combo defaults, and require-login configuration.
+- **omni-sync-cloud** *(CLI)* — Synchronise OmniRoute configuration, provider connections, and settings to/from cloud storage.
+- **omni-tunnels** *(CLI)* — Create and manage secure tunnels (ngrok, Cloudflare Tunnel, custom) to expose OmniRoute to the internet or share access with remote agents and CI pipelines.
+- **omni-usage-logs** *(CLI)* — Access detailed call logs and usage analytics.
+- **omni-version-manager** *(CLI)* — Install, start, stop, restart, and update embedded services (9Router, CLIProxyAPI).
+- **omni-webhooks** *(CLI)* — Register, list, test, and remove webhook endpoints.
+
+## ECC — engineering, agents, business & operations (312)
+
+- **accessibility** — Design, implement, and audit accessible UI to WCAG 2.2 Level AA across Web, iOS, and Android — semantic ARIA roles and labels, accessibility traits and hints, focus management, contrast, target size, and screen-reader support.
+- **agent-architecture-audit** — Full-stack diagnostic for agent and LLM applications.
+- **agent-eval** — Head-to-head comparison of coding agents (Claude Code, Aider, Codex, etc.) on custom tasks with pass rate, cost, time, and consistency metrics.
+- **agent-harness-construction** — Design and optimize AI agent action spaces, tool definitions, and observation formatting for higher completion rates.
+- **agent-introspection-debugging** — Structured self-debugging workflow for AI agent failures using capture, diagnosis, contained recovery, and introspection reports.
+- **agent-payment-x402** — Add x402 payment execution to AI agents with per-task budgets, spending controls, and non-custodial wallets.
+- **agent-runtime-gateway-smoke-test** — Verify a local agent API, temporary gateway tunnel, and remote sandbox callback with a tool-free task, then restore the original app connection.
+- **agent-security-hardening** — Security hardening guidance for AI agent frameworks that process untrusted content, invoke tools, write workspace files, manage runtime identifiers, or handle credentials.
+- **agent-self-evaluation** — Use after completing any non-trivial task.
+- **agent-sort** — Build an evidence-backed ECC install plan for a specific repo by sorting skills, commands, rules, hooks, and extras into DAILY vs LIBRARY buckets using parallel repo-aware review passes.
+- **agentic-engineering** — Operate as an agentic engineer using eval-first execution, decomposition, and cost-aware model routing.
+- **agentic-os** — Build persistent multi-agent operating systems on Claude Code.
+- **ai-first-engineering** — Engineering operating model for teams where AI agents generate a large share of implementation output.
+- **ai-regression-testing** — Regression testing strategies for AI-assisted development.
+- **android-clean-architecture** — Clean Architecture patterns for Android and Kotlin Multiplatform projects — module structure, dependency rules, UseCases, Repositories, and data layer patterns.
+- **angular-developer** — Generates Angular code and provides architectural guidance.
+- **api-connector-builder** — Build a new API connector or provider by matching the target repo's existing integration pattern exactly.
+- **api-design** — REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs.
+- **architecture-decision-records** — Capture architectural decisions as numbered ADR markdown files in docs/adr/ with context, alternatives considered, consequences, and an index README.
+- **article-writing** — Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice derived from supplied examples or brand guidance.
+- **automation-audit-ops** — Evidence-first automation inventory and overlap audit workflow for ECC.
+- **autonomous-agent-harness** — Transform Claude Code into a fully autonomous agent system with persistent memory, scheduled operations, computer use, and task queuing.
+- **autonomous-loops** — Patterns and architectures for autonomous Claude Code loops — from simple sequential pipelines to RFC-driven multi-agent DAG systems.
+- **backend-patterns** — Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.
+- **benchmark** — Measure performance baselines and detect regressions across browser Core Web Vitals (LCP, INP, CLS, page weight), API endpoint latency percentiles, and build/test feedback times, with before/after comparison stored in git-tracked .ecc/be…
+- **benchmark-methodology** — Score a scoped competitor set into comparable profile cards: nine weighted dimensions (positioning, voice, visual craft, offer packaging, evidence, enterprise-readiness, thought leadership, pricing, client tension) with 1-5 evidence-anch…
+- **benchmark-optimization-loop** — Convert 'make it faster' requests into a bounded measured optimization loop — baseline first, generate one-hypothesis variants, benchmark each against a correctness gate, and promote the fastest safe variant with reproducible commands.
+- **bengali-nlp** — Bengali (Bangla) text processing patterns including Unicode normalization, script detection, tokenization, conjunct handling, and Bangla-specific NLP best practices for AI applications.
+- **blender-motion-state-inspection** — Use this skill when inspecting Blender characters, rigs, poses, animation retargeting, ground contact, facing direction, or model-vs-motion alignment where screenshots alone are not enough.
+- **blueprint** — Turn a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects: one-PR-sized steps with self-contained context briefs, dependency graph with parallel-step detection, adversarial review…
+- **brand-discovery** — Run a structured, resumable multi-session brand identity interview across 8 modules (purpose, positioning, audience, personality, voice, narrative, founder tension) using laddering, 5 Whys, and projective techniques, persisting answers t…
+- **brand-voice** — Build a source-derived writing style profile from real posts, essays, launch notes, docs, or site copy, then reuse that profile across content, outreach, and social workflows.
+- **brownfield-retrospective** — Run the ECC engineering process retroactively against an existing project slice.
+- **browser-qa** — Run automated post-deploy UI verification with a browser automation MCP (claude-in-chrome, Playwright, or Puppeteer): console-error and Core Web Vitals smoke checks, form and auth-flow interaction tests, screenshot visual regression acro…
+- **bun-runtime** — Bun as runtime, package manager, bundler, and test runner.
+- **canary-watch** — Use this skill to monitor and verify a deployed URL after releases — checks HTTP endpoints, SSE streams, static assets, console errors, and performance regressions after deploys, merges, or dependency upgrades.
+- **carrier-relationship-management** — Manage truckload, LTL, and intermodal carrier portfolios: sourcing and FMCSA vetting, freight rate and fuel-surcharge negotiation, RFPs and routing guides, carrier scorecards, allocation, and renewals.
+- **change-impact** — Perform evidence-backed impact analysis before changing code, data, interfaces, or governance documents, then compare the planned impact with the actual diff after implementation.
+- **cisco-ios-patterns** — Cisco IOS and IOS-XE review patterns for show commands, config hierarchy, wildcard masks, ACL placement, interface hygiene, and safe change-window verification.
+- **ck** — Persistent per-project memory for Claude Code (Context Keeper) driven by deterministic Node.js /ck commands: init, save, resume, info, list, forget, and v1-to-v2 migrate, plus a SessionStart hook that injects a compact project brief.
+- **claude-devfleet** — Orchestrate multi-agent coding tasks via Claude DevFleet — plan projects, dispatch parallel agents in isolated worktrees, monitor progress, and read structured reports.
+- **click-path-audit** — Trace every user-facing button/touchpoint through its full state change sequence to find bugs where functions individually work but cancel each other out, produce wrong final state, or leave the UI in an inconsistent state.
+- **clickhouse-io** — ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads.
+- **code-tour** — Create CodeTour `.tour` files — persona-targeted, step-by-step walkthroughs with real file and line anchors.
+- **codebase-onboarding** — Analyze an unfamiliar codebase and generate a structured onboarding guide with architecture map, key entry points, conventions, and a starter CLAUDE.md.
+- **codehealth-mcp** — Real-time structural Code Health via CodeScene MCP — review before edits, verify score deltas after changes, gate commits and PRs.
+- **coding-standards** — Baseline cross-project coding conventions for naming, readability, immutability, and code-quality review.
+- **competitive-platform-analysis** — Use when scoping a competitive landscape — identifying, categorising, and score-filtering a competitor set before any benchmarking begins.
+- **competitive-report-structure** — Assemble scored competitor profile cards (from benchmark-methodology) into a decision-grade competitive report with landscape map, competitor tiers, benchmarking matrix, white-space analysis, strategic recommendations, and team alignment…
+- **compose-multiplatform-patterns** — Compose Multiplatform and Jetpack Compose patterns for KMP projects — state management, navigation, theming, performance, and platform-specific UI.
+- **config-gc** — Garbage collection for your Claude Code configuration.
+- **configure-ecc** — Run the conversational ECC setup wizard inside the current harness: inventory the install, collect scope (user/project/local) and hook mode (off/minimal/standard/strict) in Claude Code, use Codex's native plugin lifecycle, or install the…
+- **connections-optimizer** — Reorganize the user's X and LinkedIn network with review-first pruning, add/follow recommendations, and channel-specific warm outreach drafted in the user's real voice.
+- **content-engine** — Create platform-native content systems for X, LinkedIn, TikTok, YouTube, newsletters, and repurposed multi-platform campaigns.
+- **content-hash-cache-pattern** — Cache expensive file processing results using SHA-256 content hashes — path-independent, auto-invalidating, with service layer separation.
+- **context-and-decisions** — Govern stable domain context with a narrowly scoped CONTEXT.md when needed, and route hard-to-reverse decisions to ECC's existing architecture-decision-records skill.
+- **context-budget** — Routes live context checks to the native Codex or Claude Code meter without scanning files, and performs a bounded static component audit only when explicitly requested.
+- **continuous-agent-loop** — Patterns for continuous autonomous agent loops with quality gates, evals, and recovery controls.
+- **continuous-learning** — [DEPRECATED - use continuous-learning-v2] Legacy v1 stop-hook skill extractor.
+- **continuous-learning-v2** — Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confidence scoring, and evolves them into skills/commands/agents.
+- **contract-first** — Coordinate frontend/backend or service-to-service work through one authoritative machine-checkable contract (OpenAPI, AsyncAPI, Protocol Buffers, or JSON Schema), with generated consumer types and contract-verified integration.
+- **conventional-commit-review** — Reviews staged changes and drafts a Conventional Commits-compliant commit message with the right type, scope, and length.
+- **cost-aware-llm-pipeline** — Cost optimization patterns for LLM API usage — model routing by task complexity, budget tracking, retry logic, and prompt caching.
+- **cost-tracking** — Track and report Claude Code token usage, spending, and budgets from the local ECC cost-tracker metrics log.
+- **council** — Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls.
+- **council-multi-model** — Add one optional external Codex critique after the existing council has produced a decision draft.
+- **counterparty-channel-discipline** — Per-channel strict prompts, mention gating, silent observation, and a communication autonomy policy for agents that sit in shared channels with external counterparties.
+- **cpp-coding-standards** — C++ coding standards based on the C++ Core Guidelines (isocpp.github.io).
+- **cpp-testing** — Use only when writing/updating/fixing C++ tests, configuring GoogleTest/CTest, diagnosing failing or flaky tests, or adding coverage/sanitizers.
+- **crosspost** — Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky.
+- **csharp-testing** — C# and .NET testing patterns with xUnit, FluentAssertions, mocking, integration tests, and test organization best practices.
+- **customer-billing-ops** — Operate customer billing workflows such as subscriptions, refunds, churn triage, billing-portal recovery, and plan analysis using connected billing tools like Stripe.
+- **customs-trade-compliance** — Codified customs and trade compliance expertise — HS/HTS tariff classification with GRI rules, commercial invoices and entry documentation, Incoterms 2020, FTA qualification and duty optimization (USMCA, RCEP, FTZs, drawback), denied-par…
+- **dart-flutter-patterns** — Production-ready Dart and Flutter patterns covering null safety, immutable state with Freezed, async composition, widget architecture, state management (BLoC, Riverpod, Provider), GoRouter navigation with auth guards, Dio networking, err…
+- **dashboard-builder** — Build monitoring dashboards that answer real operator questions for Grafana, SigNoz, and similar platforms.
+- **data-scraper-agent** — Build a fully automated AI-powered data collection agent for any public source — job boards, prices, news, GitHub, sports, anything.
+- **data-throughput-accelerator** — Diagnose and accelerate large data movement — ingestion, backfill, export, ETL, warehouse loading, manifest catch-up, and table synchronization — by isolating the true bottleneck, benchmarking variants, and codifying the fastest path wit…
+- **database-migrations** — Safe, reversible database migration patterns: forward-only production changes, expand-contract zero-downtime renames, concurrent indexes, batched backfills, and per-tool workflows for PostgreSQL, Prisma, Drizzle, Kysely, Django, and gola…
+- **deep-research** — Produce cited research reports from multiple web sources using firecrawl and exa MCP tools — plan sub-questions, search and deep-read sources, then synthesize findings with inline citations and confidence levels.
+- **deepseek-harness-setup** — Install and operate Everything Claude Code (ECC) on the DeepSeek Harness (DSH): native skill roots (~/.dsh/skills, .agents/skills), the @deepseek-ai/dsh-hooks-claude-code bridge for command hooks, bare-insert patch mounting, generator us…
+- **defi-amm-security** — Security checklist for Solidity AMM contracts, liquidity pools, and swap flows.
+- **delivery-gate** — Stop hook that blocks Claude from finishing until quality checks pass.
+- **deployment-patterns** — Deployment workflows, CI/CD pipeline patterns, Docker containerization, health checks, rollback strategies, and production readiness checklists for web applications.
+- **design-system** — Generate a design system from an existing codebase or audit one for visual consistency: extract tokens (colors, typography, spacing, shadows) into design-tokens.json and CSS custom properties with DESIGN.md rationale and an interactive H…
+- **dev-team** — Simulate a collaborative dev team session where multiple role-based personas (PM, Architect, Developer, QA) respond to the same problem together in one session.
+- **django-celery** — Django + Celery async task patterns — configuration, task design, beat scheduling, retries, canvas workflows, monitoring, and testing.
+- **django-patterns** — Django architecture patterns, REST API design with DRF, ORM best practices, caching, signals, middleware, and production-grade Django apps.
+- **django-security** — Django security best practices, authentication, authorization, CSRF protection, SQL injection prevention, XSS prevention, and secure deployment configurations.
+- **django-tdd** — Django testing strategies with pytest-django, TDD methodology, factory_boy, mocking, coverage, and testing Django REST Framework APIs.
+- **django-verification** — Run the full Django verification loop — environment check, mypy/ruff/black linting, migration safety, pytest with coverage targets, pip-audit and bandit security scans, settings and logging review, and diff review — producing a phased pa…
+- **dmux-workflows** — Multi-agent orchestration using dmux (tmux pane manager for AI agents).
+- **docker-patterns** — Docker and Docker Compose patterns for local development, hardened CLI installer harnesses, container security, networking, volumes, and multi-service orchestration.
+- **docs-governance** — Route broad documentation-governance requests to existing ECC skills and run an opt-in, read-only audit of mapped documentation roles, links, ADR indexes, and evidence references.
+- **documentation-lookup** — Use up-to-date library and framework docs via Context7 MCP instead of training data.
+- **dotnet-patterns** — Idiomatic C# and .NET patterns, conventions, dependency injection, async/await, and best practices for building robust, maintainable .NET applications.
+- **dynamic-workflow-mode** — Design task-local harnesses, eval gates, and reusable skill extraction for Claude dynamic workflow mode and other adaptive agent harnesses.
+- **e2e-testing** — Playwright E2E testing patterns, Page Object Model, configuration, CI/CD integration, artifact management, and flaky test strategies.
+- **ecc-guide** — Answer questions about ECC by reading the live repo surface — agents, skills, commands, hooks, rules, install profiles, and docs — instead of memory.
+- **ecc-recipes** — Map a described workflow to the right ECC command group with run-order and stop condition, or browse all command-group recipe families read live from the commands directory.
+- **ecc-tools-cost-audit** — Evidence-first ECC Tools burn and billing audit workflow.
+- **email-ops** — Evidence-first mailbox triage, drafting, send verification, and sent-mail-safe follow-up workflow for ECC.
+- **energy-procurement** — Procure electricity and natural gas for commercial and industrial facilities: tariff and rate-schedule optimization, demand-charge mitigation, supplier RFPs, fixed/index/block-and-index hedging, renewable PPA and REC evaluation, and sust…
+- **enterprise-agent-ops** — Operational controls for long-lived or cloud-hosted agent systems — runtime lifecycle (start, pause, stop, restart), observability (logs, metrics, traces), least-privilege safety scopes and kill switches, and rollout/rollback change mana…
+- **error-handling** — Patterns for robust error handling across TypeScript, Python, and Go.
+- **esign-field-placement** — Deterministic method for placing signature, date, and text fields in a web e-signature composer through a browser automation session, using a fixed signature page, numeric Location panel coordinates instead of drag, and a save-as-draft d…
+- **eval-harness** — Eval-driven development (EDD) framework for AI coding sessions — define capability and regression evals before coding, grade with code-based, model-based, rule, or human graders, and track pass@k and pass^k reliability.
+- **evm-token-decimals** — Prevent silent decimal mismatch bugs across EVM chains.
+- **exa-search** — Neural search via Exa MCP for web, code, and company research.
+- **fal-ai-media** — Unified media generation via fal.ai MCP — image, video, and audio.
+- **fastapi-patterns** — FastAPI best practices covering project structure, Pydantic v2 schemas, dependency injection, async handlers, authentication, authorization, transactional service layers, and testing with httpx and pytest.
+- **finance-billing-ops** — Evidence-first revenue, pricing, refunds, team-billing, and billing-model truth workflow for ECC.
+- **flox-environments** — Create reproducible, cross-platform (macOS/Linux) development environments with Flox, a declarative Nix-based environment manager.
+- **flutter-dart-code-review** — Library-agnostic Flutter/Dart code review checklist covering widget best practices, state management patterns (BLoC, Riverpod, Provider, GetX, MobX, Signals), Dart idioms, performance, accessibility, security, and clean architecture.
+- **foundation-models-on-device** — Apple FoundationModels framework for on-device LLM — text generation, guided generation with @Generable, tool calling, and snapshot streaming in iOS 26+.
+- **frontend-a11y** — Accessibility patterns for React and Next.js — semantic HTML, ARIA attributes, form labeling, keyboard navigation, focus management, and screen reader support.
+- **frontend-design-direction** — Set an ECC-specific frontend design direction for production UI work.
+- **frontend-patterns** — Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.
+- **frontend-slides** — Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files.
+- **fsharp-testing** — F# testing patterns with xUnit, FsUnit, Unquote, FsCheck property-based testing, integration tests, and test organization best practices.
+- **gan-style-harness** — GAN-inspired Generator-Evaluator agent harness for building high-quality applications autonomously.
+- **gateguard** — PreToolUse fact-forcing gate that denies the first Edit/Write/Bash (including MultiEdit and NotebookEdit) attempt until the agent presents concrete facts (importers, data schemas, verbatim user instruction), then allows retry; A/B-tested…
+- **generating-python-installer** — Commercial-grade Python installer expert for Windows: Nuitka extreme compilation, dist slimming, DLL footprint analysis, and Inno Setup packaging to ship the smallest, fastest installers.
+- **git-workflow** — Git workflow patterns including branching strategies, commit conventions, keeping history clean and readable, tidying local commits before merging, merge vs rebase, conflict resolution, and collaborative development best practices for te…
+- **github-ops** — GitHub repository operations, automation, and management.
+- **golang-patterns** — Idiomatic Go patterns, best practices, and conventions for building robust, efficient, and maintainable Go applications.
+- **golang-testing** — Go testing patterns including table-driven tests, subtests, benchmarks, fuzzing, and test coverage.
+- **google-workspace-ops** — Operate across Google Drive, Docs, Sheets, and Slides as one workflow surface for plans, trackers, decks, and shared documents.
+- **growth-log** — Write growth log entries that extract reusable patterns from completed work — root cause, transferable rule, and a recognizable signal — instead of diary-style event narration, with a 4-8 sentence template and merge-duplicates discipline.
+- **healthcare-cdss-patterns** — Clinical Decision Support System (CDSS) development patterns.
+- **healthcare-emr-patterns** — EMR/EHR development patterns for healthcare applications.
+- **healthcare-eval-harness** — Patient safety evaluation harness for healthcare application deployments.
+- **healthcare-phi-compliance** — Protected Health Information (PHI) and PII compliance patterns for healthcare applications: data classification, row-level access control, tamper-proof audit trails, schema tagging, and common leak vectors such as logs, URLs, and browser…
+- **hermes-imports** — Convert local Hermes operator workflows into sanitized ECC skills and release-pack artifacts.
+- **hexagonal-architecture** — Design, implement, and refactor Ports & Adapters systems with clear domain boundaries, dependency inversion, and testable use-case orchestration across TypeScript, Java, Kotlin, and Go services.
+- **hipaa-compliance** — HIPAA-specific entrypoint for healthcare privacy and security work.
+- **homelab-network-readiness** — Readiness checklist for homelab VLAN segmentation, local DNS filtering (Pi-hole, AdGuard Home), and WireGuard-style remote access.
+- **homelab-network-setup** — Practical home and homelab network planning for gateways, switches, access points, IP ranges, DHCP reservations, DNS, cabling, and common beginner mistakes.
+- **homelab-pihole-dns** — Pi-hole installation, blocklist management, DNS-over-HTTPS setup, DHCP integration, local DNS records, and troubleshooting broken DNS resolution on a home network.
+- **homelab-vlan-segmentation** — Segmenting home networks into VLANs for IoT, guest, trusted, and server traffic using UniFi, pfSense/OPNsense, and MikroTik — including switch trunk config, firewall rules, and wireless SSID mapping.
+- **homelab-wireguard-vpn** — WireGuard VPN server setup, peer configuration, key generation, split tunneling vs full tunnel routing, and remote access to a home network from mobile and laptop clients.
+- **hookify-rules** — Create and configure hookify rules — markdown files with YAML frontmatter that match bash, file, prompt, or stop events by regex or conditions and show warn/block messages to the agent.
+- **i18n-sync** — Translate and synchronize application JSON locale files using source-key usage, project terminology, and focused validation.
+- **inherit-legacy-style** — Prevent AI style drift on legacy projects by scanning the codebase for implicit conventions, resolving conflicts with the operator one at a time, and writing an enforceable .ai-style-rules.md (Golden Files, naming rules, DONTs) plus an o…
+- **intent-driven-development** — Turn ambiguous or high-impact product and engineering changes into scoped, verifiable acceptance criteria before or alongside implementation.
+- **inventory-demand-planning** — Codified demand planning expertise for multi-location retailers: demand forecasting method selection, ABC/XYZ segmentation, safety stock and reorder-point optimization, promotional lift and post-promo dip estimation, and seasonal transit…
+- **investor-materials** — Create and update pitch decks, one-pagers, investor memos, accelerator applications, financial models, and fundraising materials.
+- **investor-outreach** — Draft cold emails, warm intro blurbs, follow-ups, update emails, and investor communications for fundraising.
+- **ios-icon-gen** — Generate iOS app icons as PNG imagesets for Xcode asset catalogs from SF Symbols (5000+ Apple-native) or Iconify API (275k+ open source icons from 200+ collections).
+- **iterative-retrieval** — Pattern for progressively refining context retrieval to solve the subagent context problem.
+- **ito-baskets** — Read-only Itô basket and prediction-market data skill.
+- **ito-compute** — Query live GPU inventory, submit an authenticated Itô fixed-rate RFQ, inspect RFQ or procurement status, revoke device credentials, and run explicitly gated node qualification through the separately installed canonical CLI.
+- **ito-inference** — Inspect the availability of model serving on a completed Itô compute booking and, when the canonical backend becomes available, hand off an explicitly confirmed serving manifest.
+- **ito-training** — Inspect the availability of ML training on a completed Itô compute booking and, when the canonical backend becomes available, hand off an explicitly confirmed training manifest.
+- **java-coding-standards** — Java coding standards for Spring Boot and Quarkus services: naming, immutability, Optional usage, streams, exceptions, generics, CDI, reactive patterns, and project layout.
+- **jira-integration** — Use this skill when retrieving Jira tickets, analyzing requirements, updating ticket status, adding comments, or transitioning issues.
+- **jpa-patterns** — JPA/Hibernate patterns for entity design, relationships, query optimization, transactions, auditing, indexing, pagination, and pooling in Spring Boot.
+- **knowledge-ops** — Knowledge base management, ingestion, sync, and retrieval across multiple storage layers (local files, MCP memory, vector stores, Git repos).
+- **kotlin-coroutines-flows** — Kotlin Coroutines and Flow patterns for Android and KMP — structured concurrency, Flow operators, StateFlow, error handling, and testing.
+- **kotlin-exposed-patterns** — JetBrains Exposed ORM patterns including DSL queries, DAO pattern, transactions, HikariCP connection pooling, Flyway migrations, and repository pattern.
+- **kotlin-ktor-patterns** — Ktor server patterns including routing DSL, plugins, authentication, Koin DI, kotlinx.serialization, WebSockets, and testApplication testing.
+- **kotlin-patterns** — Idiomatic Kotlin patterns, best practices, and conventions for building robust, efficient, and maintainable Kotlin applications with coroutines, null safety, and DSL builders.
+- **kotlin-testing** — Kotlin testing patterns with Kotest, MockK, coroutine testing, property-based testing, and Kover coverage.
+- **kubernetes-patterns** — Kubernetes workload patterns, resource management, RBAC, probes, autoscaling, ConfigMap/Secret handling, and kubectl debugging for production-grade deployments.
+- **laravel-patterns** — Laravel architecture patterns, routing/controllers, Eloquent ORM, service layers, queues, events, caching, and API resources for production apps.
+- **laravel-plugin-discovery** — Discover and evaluate Laravel packages via LaraPlugins.io MCP.
+- **laravel-security** — Laravel security best practices — authentication, authorization, Eloquent safety, CSRF, XSS prevention, API security, and secure deployment configurations.
+- **laravel-tdd** — Laravel testing strategies with PHPUnit, Pest, model factories, HTTP tests, Sanctum authentication testing, mocking, and coverage.
+- **laravel-verification** — Verification loop for Laravel projects: env checks, linting, static analysis, tests with coverage, security scans, and deployment readiness.
+- **latency-critical-systems** — Optimize and verify latency-sensitive systems — realtime dashboards, market data feeds, streaming agents, execution gateways, queues, and caches — by tracking p50/p95/p99 latency, freshness age, and queue depth, mapping hot paths, and ru…
+- **lead-intelligence** — AI-native lead intelligence and outreach pipeline.
+- **liquid-glass-design** — iOS 26 Liquid Glass design system — dynamic glass material with blur, reflection, and interactive morphing for SwiftUI, UIKit, and WidgetKit.
+- **living-docs-governance** — Keep a long-lived project's documentation from rotting by assigning existing project docs clear constitution, map, status, and history roles, then wiring the active agent harness to those canonical sources.
+- **llm-trading-agent-security** — Security patterns for autonomous trading agents with wallet or transaction authority.
+- **logistics-exception-management** — Codified freight-exception handling expertise for shipment delays, damages, losses, shortages, and carrier disputes, with escalation protocols, carrier-specific behaviors by mode, claims procedures, and eat-the-cost vs fight-the-claim ju…
+- **loop-design-check** — Design a goal-oriented agent loop or review one for failure modes: spinning, Goodhart-gaming the verifier, or running a wrong answer to completion.
+- **mailtrap-email-integration** — Guides agents through integrating transactional email sending via Mailtrap's Email API, including sandbox testing, domain verification, and API authentication.
+- **make-interfaces-feel-better** — Apply concrete design-engineering details that make interfaces feel polished.
+- **manim-video** — Build reusable Manim explainers for technical concepts, graphs, system diagrams, and product walkthroughs, then hand off to the wider ECC video stack if needed.
+- **market-research** — Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution and decision-oriented summaries.
+- **marketing-campaign** — End-to-end marketing campaign planning and execution.
+- **master-agreement-generator** — Generate review drafts of counterparty master agreements from one template plus a JSON spec, with role-selected clauses and a Schedule A workflow limited to the executed agreement's notice authority.
+- **mcp-dependency-review** — Statically review MCP configuration for mutable package references before approval or CI, without executing discovered MCP servers.
+- **mcp-server-patterns** — Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP.
+- **messages-ops** — Evidence-first live messaging workflow for ECC.
+- **ml-adoption-playbook** — End-to-end methodology for AI agents and software engineers to add machine learning algorithms to existing non-ML codebases.
+- **mle-workflow** — Production machine-learning engineering workflow for data contracts, reproducible training, model evaluation, deployment, monitoring, and rollback.
+- **module-regression** — Govern cross-module regression in large repositories with a REGRESSION.md ledger that records each module's downstream consumers and executable acceptance command.
+- **motion-advanced** — Advanced motion patterns for React / Next.js — drag & drop, gestures, text animations, SVG path drawing, custom hooks, imperative sequences (useAnimate), loaders, and the full API decision tree.
+- **motion-foundations** — Motion tokens, spring presets, performance rules, device adaptation, accessibility enforcement, and SSR safety for React / Next.js using motion/react.
+- **motion-patterns** — Production-ready animation patterns for React / Next.js — button, modal, toast, stagger, page transitions, exit animations, scroll, and layout — built on motion-foundations tokens and springs.
+- **mybatis-patterns** — MyBatis and MyBatis-Spring patterns for mapper design, XML and annotation SQL, result mapping, dynamic SQL safety, transactions, batching, pagination, and query performance.
+- **mysql-patterns** — MySQL and MariaDB schema, query, indexing, transaction, replication, and connection-pool patterns for production backends.
+- **nanoclaw-repl** — Operate and extend NanoClaw, ECC's zero-dependency session-aware REPL, with persistent markdown-backed sessions and slash commands for model switching, skill loading, session branching, cross-session search, history compaction, and export.
+- **nasiko-control-plane** — Manage the experimental Nasiko CLI lifecycle through ECC — read-only status checks, consent-gated install of the pinned qualified version with dry-run preview, and ownership-checked uninstall, under explicit telemetry and secrets boundar…
+- **nestjs-patterns** — NestJS architecture patterns for modules, controllers, providers, DTO validation, guards, interceptors, config, and production-grade TypeScript backends.
+- **netmiko-ssh-automation** — Safe Python Netmiko patterns for read-only collection, bounded batch SSH, TextFSM parsing, guarded config changes, timeouts, and network automation error handling.
+- **network-bgp-diagnostics** — Diagnostics-only BGP troubleshooting patterns for neighbor state, route exchange, prefix policy, AS path inspection, and safe evidence collection.
+- **network-config-validation** — Pre-deployment checks for router and switch configuration, including dangerous commands, duplicate addresses, subnet overlaps, stale references, management-plane risk, and IOS-style security hygiene.
+- **network-interface-health** — Diagnose interface errors, drops, CRCs, duplex mismatches, flapping, speed negotiation issues, and counter trends on routers, switches, and Linux hosts.
+- **nextjs-turbopack** — Next.js 16+ and Turbopack guidance — incremental Rust bundling, file-system caching, faster dev startup and HMR, Turbopack vs webpack tradeoffs, and the middleware.ts to proxy.ts filename change.
+- **nodejs-keccak256** — Prevent Ethereum hashing bugs in JavaScript and TypeScript.
+- **nutrient-document-processing** — Process, convert, OCR, extract, redact, sign, and fill documents using the Nutrient DWS API.
+- **nuxt4-patterns** — Nuxt 4 app patterns for hydration safety, performance, route rules, lazy loading, and SSR-safe data fetching with useFetch and useAsyncData.
+- **openclaw-persona-forge** — 为 OpenClaw AI Agent 锻造完整的龙虾灵魂方案。根据用户偏好或随机抽卡， 输出身份定位、灵魂描述(SOUL.md)、角色化底线规则、名字和头像生图提示词。 如当前环境提供已审核的生图 skill，可自动生成统一风格头像图片。 当用户需要创建、设计或定制 OpenClaw 龙虾灵魂时使用。 不适用于：微调已有 SOUL.md、非 OpenClaw 平台的角色设计、纯工具型无性格 Agent。 触发词：龙虾灵魂、虾魂、OpenClaw 灵魂、养虾灵魂、龙虾角…
+- **opensource-pipeline** — Open-source pipeline: fork, sanitize, and package private projects for safe public release.
+- **operator-approval-loop** — Operator approval contract with internal filing notices for agent-drafted outbound messages, hashed drafts, epoch-keyed decisions, durable delivery claims and receipts, and a pre-draft baseline gate.
+- **orch-add-feature** — Orchestrate building a brand-new feature end to end — research, plan, TDD implementation, review, and gated commit — by delegating each phase to the matching ECC agent.
+- **orch-build-mvp** — Orchestrate bootstrapping a working MVP from a design or spec document — ingest the SDD/PRD, plan thin vertical slices, scaffold the first end-to-end slice, then drive a generator-evaluator build loop with review and gated feat commits.
+- **orch-change-feature** — Orchestrate altering an existing, working feature to new desired behavior — update its tests to the new spec, change the implementation to match, review, and gated commit.
+- **orch-fix-defect** — Orchestrate fixing a bug — reproduce it as a failing regression test, fix to green, review, and gated commit — by delegating each phase to the matching ECC agent.
+- **orch-pipeline** — Shared orchestration engine behind the orch-* skill family — the gated Research-Plan-TDD-Review-Commit pipeline, size classifier, agent and command map, and two human gates (plan approval, commit confirmation) that orch-* operation skill…
+- **orch-refine-code** — Orchestrate a behavior-preserving refactor — confirm tests are green, restructure without changing behavior, keep tests green, review, and gated commit.
+- **osint-investigation** — Sparse-clue OSINT investigation methodology for extracting overlooked leads, connecting fragmented evidence, and testing explanations across sources.
+- **parallel-execution-optimizer** — Speed up a task by turning it into a dependency graph of parallel lanes with a lane matrix, batched reads and checks, write surfaces isolated by file, worktree, branch, or service, and a final verification table.
+- **perl-patterns** — Modern Perl 5.36+ idioms, best practices, and conventions for building robust, maintainable Perl applications.
+- **perl-security** — Comprehensive Perl security covering taint mode, input validation, safe process execution, DBI parameterized queries, web security (XSS/SQLi/CSRF), and perlcritic security policies.
+- **perl-testing** — Perl testing patterns using Test2::V0, Test::More, prove runner, mocking, coverage with Devel::Cover, and TDD methodology.
+- **plan-canvas** — Open plans and HTML artifacts in a local browser canvas where the human annotates elements, chats, and approves or requests changes without leaving the page.
+- **plan-orchestrate** — Read a plan document, decompose it into steps, classify each step, and emit the ready-to-paste ECC slash command for that step, carrying the step identifier and scope in the command's own documented argument form.
+- **plankton-code-quality** — Write-time code quality enforcement using Plankton — auto-formatting, linting, and Claude-powered fixes on every file edit via hooks.
+- **ponytail** — Forces the laziest solution that actually works: question whether the task needs to exist at all (YAGNI), reuse what is already in the codebase, reach for the standard library before custom code, native platform features before dependenc…
+- **postgres-patterns** — PostgreSQL database patterns for query optimization, schema design, indexing, and security.
+- **prediction-market-oracle-research** — Research prediction markets as data sources or oracle signals for products, agents, dashboards, and corporate decision intelligence.
+- **prediction-market-risk-review** — Review prediction-market, basket, oracle, and trading-agent workflows for compliance, safety, data-quality, privacy, and execution risk.
+- **prisma-patterns** — Prisma ORM patterns for TypeScript backends — schema design, query optimization, transactions, pagination, and critical traps like updateMany returning count not records, $transaction timeouts, migrate dev resetting the DB, @updatedAt sk…
+- **product-capability** — Translate PRD intent, roadmap asks, or product discussions into an implementation-ready capability plan that exposes constraints, invariants, interfaces, and unresolved decisions before multi-service work starts.
+- **product-lens** — Validate the why before building through four product diagnostics — a YC-style product diagnostic that produces PRODUCT-BRIEF.md with a go/no-go recommendation, a founder review scoring product-market-fit signals, a user journey audit me…
+- **production-audit** — Local-evidence production readiness audit for shipped apps, pre-launch reviews, post-merge checks, and "what breaks in prod?" questions without sending repo data to an external audit service.
+- **production-scheduling** — Codified expertise for production scheduling, job sequencing, line balancing, changeover optimization, and bottleneck resolution in discrete and batch manufacturing.
+- **project-flow-ops** — Operate execution flow across GitHub and Linear by triaging issues and pull requests, linking active work, and keeping GitHub public-facing while Linear remains the internal execution layer.
+- **prompt-caching-strategy** — Optimize LLM prompt caching hit rate to reduce API costs and improve latency.
+- **prompt-optimizer** — Analyze draft prompts, detect intent and missing context, match ECC commands, skills, and agents, and output a ready-to-paste optimized prompt with diagnosis and rationale — advisory only, never executes the task.
+- **python-patterns** — Pythonic idioms, PEP 8 standards, type hints, and best practices for building robust, efficient, and maintainable Python applications.
+- **python-testing** — Python testing strategies using pytest, TDD methodology, fixtures, mocking, parametrization, and coverage requirements.
+- **pytorch-patterns** — PyTorch deep learning patterns and best practices for building robust, efficient, and reproducible training pipelines, model architectures, and data loading.
+- **quality-nonconformance** — Quality control and non-conformance management for regulated manufacturing (FDA 21 CFR 820, IATF 16949, AS9100): NCR lifecycle and disposition, 5-Why/Ishikawa/fault-tree/8D root cause analysis, CAPA systems, SPC interpretation, AQL sampl…
+- **quarkus-patterns** — Quarkus 3.x LTS architecture patterns with Camel for messaging, RESTful API design, CDI services, data access with Panache, and async processing.
+- **quarkus-security** — Quarkus security implementation patterns: JWT and OIDC authentication, @RolesAllowed RBAC and SecurityIdentity checks, Bean Validation and custom validators, parameterized Panache queries, BCrypt password hashing, CORS and security heade…
+- **quarkus-tdd** — Test-driven development for Quarkus 3.x LTS using JUnit 5, Mockito, REST Assured, Camel testing, and JaCoCo.
+- **quarkus-verification** — Verification loop for Quarkus projects: build, static analysis (Checkstyle, PMD, SpotBugs), tests with JaCoCo coverage, OWASP dependency and container security scans, GraalVM native compilation, health checks, and config validation.
+- **rails-patterns** — Ruby on Rails framework patterns for Rails 7.1+ and 8.x apps.
+- **ralphinho-rfc-pipeline** — Split an RFC into a multi-agent execution DAG — decompose into work units with dependencies and acceptance tests, run research, plan, implement, test, and review per unit, then merge through a queue with re-based branches and final syste…
+- **react-native-patterns** — React Native and Expo app patterns — Expo Router navigation, state separation (server/client/route/form), TanStack Query data fetching with Zod, performant lists, NativeWind/StyleSheet styling, native APIs, and secure storage.
+- **react-patterns** — React 18/19 patterns including hooks discipline, server/client component boundaries, Suspense + error boundaries, form actions, data fetching, state management decision trees, and accessibility-first composition.
+- **react-performance** — React and Next.js performance optimization patterns adapted from Vercel Engineering's React Best Practices (https://github.com/vercel-labs/agent-skills).
+- **react-testing** — React component testing with React Testing Library, Vitest/Jest, MSW for network mocking, accessibility assertions with axe, and the decision boundary between component tests and Playwright/Cypress end-to-end runs.
+- **recsys-pipeline-architect** — Design composable recommendation, ranking, and feed pipelines using the six-stage Source→Hydrator→Filter→Scorer→Selector→SideEffect framework popularized by xAI's open-sourced For You algorithm.
+- **recursive-decision-ledger** — Run repeated rollouts ("Prime Gauss" style recursive prompting) while keeping an append-only decision ledger of trials, marks, coherence checks, and promotion gates, so recursive confidence never auto-approves live trading, deploy, or de…
+- **redis-patterns** — Redis data structure patterns, caching strategies, distributed locks, rate limiting, pub/sub, and connection management for production applications.
+- **regex-vs-llm-structured-text** — Decision framework for parsing structured text (quizzes, forms, invoices, receipts, tables) with a hybrid regex-first pipeline — regex extraction handles 95%+ cheaply, a confidence scorer flags low-confidence items, and an LLM validator …
+- **remotion-video-creation** — Best practices for Remotion - Video creation in React.
+- **repo-scan** — Bootstrap pointer that installs the external repo-scan skill from a pinned, reviewable commit.
+- **research-ops** — Evidence-first current-state research workflow for ECC.
+- **returns-reverse-logistics** — Codified expertise for returns authorization, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management.
+- **rules-distill** — Scan skills to extract cross-cutting principles and distill them into rules — append, revise, or create new rule files.
+- **rust-patterns** — Idiomatic Rust patterns, ownership, error handling, traits, concurrency, and best practices for building safe, performant applications.
+- **rust-testing** — Rust testing patterns including unit tests, integration tests, async testing, property-based testing, mocking, and coverage.
+- **safety-guard** — Guard against destructive operations with three modes: Careful intercepts dangerous commands (rm -rf, git push --force, DROP TABLE) for confirmation, Freeze locks writes to one directory, and Guard combines both via PreToolUse hooks.
+- **santa-method** — Multi-agent adversarial verification: two independent reviewers with the same rubric must both pass before output ships, with a fix-and-re-review convergence loop and human escalation cap.
+- **scientific-db-pubmed-database** — Direct PubMed and NCBI E-utilities search workflows for biomedical literature, MeSH queries, PMID lookup, citation retrieval, and API-backed literature monitoring.
+- **scientific-db-uspto-database** — USPTO patent and trademark data workflow for official record lookup, PatentSearch queries, TSDR checks, assignment data, and reproducible IP research logs.
+- **scientific-pkg-gget** — gget CLI and Python workflow for quick genomic database queries, sequence lookup, BLAST-style searches, enrichment checks, and reproducible bioinformatics evidence logs.
+- **scientific-thinking-literature-review** — Systematic literature-review workflow for academic, biomedical, technical, and scientific topics, including search planning, source screening, synthesis, citation checks, and evidence logging.
+- **scientific-thinking-scholar-evaluation** — Structured scholarly-work evaluation for papers, proposals, literature reviews, methods sections, evidence quality, citation support, and research-writing feedback.
+- **search-first** — Research-before-coding workflow: search npm/PyPI, MCP servers, skills, and GitHub for existing tools before writing custom code, then adopt, extend, or build.
+- **security-bounty-hunter** — Hunt for exploitable, bounty-worthy security issues in repositories.
+- **security-review** — Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing payment/sensitive features.
+- **security-scan** — Scan your Claude Code configuration (.claude/ directory) for security vulnerabilities, misconfigurations, and injection risks using AgentShield.
+- **seo** — Audit, plan, and implement SEO improvements across technical SEO, on-page optimization, structured data, Core Web Vitals, and content strategy.
+- **skill-comply** — Visualize whether skills, rules, and agent definitions are actually followed — auto-generates scenarios at 3 prompt strictness levels, runs agents, classifies behavioral sequences, and reports compliance rates with full tool call timelines.
+- **skill-host-compat** — Lint ECC skills for Codex/Cursor-safe frontmatter and Claude-only substitutions before a skill PR.
+- **skill-scout** — Search existing local, marketplace, GitHub, and web skill sources before creating a new skill.
+- **skill-stocktake** — Use when auditing Claude skills and commands for quality.
+- **social-graph-ranker** — Weighted social-graph ranking for warm intro discovery, bridge scoring, and network gap analysis across X and LinkedIn.
+- **social-publisher** — Agent-driven scheduling and publishing of social media posts across 13 platforms via SocialClaw.
+- **springboot-patterns** — Spring Boot architecture patterns, REST API design, layered services, data access, caching, async processing, and logging.
+- **springboot-security** — Spring Security best practices for authn/authz, validation, CSRF, secrets, headers, rate limiting, and dependency security in Java Spring Boot services.
+- **springboot-tdd** — Test-driven development for Spring Boot using JUnit 5, Mockito, MockMvc, Testcontainers, and JaCoCo.
+- **springboot-verification** — Run the full Spring Boot verification loop — Maven or Gradle build, SpotBugs, PMD, and Checkstyle static analysis, unit and Testcontainers integration tests with JaCoCo coverage, OWASP dependency and secret scans, and diff review — produ…
+- **story-lifecycle** — Manage a file-based epic → story → sprint development loop without requiring an external project management tool.
+- **strategic-compact** — Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction.
+- **swift-actor-persistence** — Thread-safe data persistence in Swift using actors — in-memory cache with file-backed storage, eliminating data races by design.
+- **swift-concurrency-6-2** — Swift 6.2 Approachable Concurrency — single-threaded by default, @concurrent for explicit background offloading, isolated conformances for main actor types.
+- **swift-protocol-di-testing** — Protocol-based dependency injection for testable Swift code — mock file system, network, and external APIs using focused protocols and Swift Testing.
+- **swiftui-patterns** — SwiftUI architecture patterns, state management with @Observable, view composition, navigation, performance optimization, and modern iOS/macOS UI best practices.
+- **taste** — Creative-direction layer for music videos and short-form edits in the angelcore / cloud-trance / hyperpop family — a named-genre aesthetic vocabulary, mood + color + light system, beat-synced editing grammar, and a pipeline chaining ECC'…
+- **taste-application** — Generate new video against a distilled style pack and cut it into a finished piece - plan takes from the reference's cut rhythm, generate on fal, grade with the pack's measured LUT, cut at the measured cadence, weave in existing footage,…
+- **taste-distillation** — Measure a set of reference videos into a reusable style pack - colour grade as a 3D LUT, cut rhythm as a shot-length distribution, hero stills, screen-blend overlay plates, and a text spec for a generative model.
+- **tasteforge-video** — Use for file-driven multimodal image, video, and 3D-asset discovery; taste interviews; distill or apply workflows; style-pack validation; editable EDL/FCPXML export; provenance audits; and offline planning that must fail closed before pr…
+- **tdd-workflow** — Test-driven development workflow: write a failing test first, watch it fail, implement the smallest change to green, then refactor with 80%+ coverage across unit, integration, and E2E tests.
+- **team-agent-orchestration** — Run team-based orchestration for agent squads: work items with owners and scope, agent Kanban state, branch isolation, control pane visibility, and merge gates.
+- **team-builder** — Interactive picker that discovers available agent personas via the claude agents command and agents/ markdown globs, groups them into domains, has the user select up to five, dispatches them in parallel on one task, and synthesizes agree…
+- **terminal-opener** — Open an executable and its argument array in a visible terminal window through a reusable, shell-free launch plan with dry-run, JSON, capability detection, detached fallback, and standalone recovery modes.
+- **terminal-ops** — Evidence-first repo execution workflow for ECC.
+- **test-collaboration** — Inventory and govern a project's test assets.
+- **tinystruct-patterns** — Expert guidance for developing with the tinystruct Java framework.
+- **token-budget-advisor** — Offer a choice of response depth (25%/50%/75%/100%) with token estimates before answering, then answer at that level.
+- **token-card** — Render a token-usage stat card from local Claude Code, Codex, Gemini CLI, and OpenCode session logs and commit it into the repository as a file.
+- **ui-demo** — Record polished UI demo videos using Playwright.
+- **ui-to-vue** — Use when the user has UI screenshots or design exports that need batch conversion into Vue 3 components, especially with Vant, Element Plus, or Ant Design Vue.
+- **uncloud** — Use when managing an Uncloud cluster — deploying services, configuring Caddy ingress, adding static proxy routes for non-cluster devices, publishing ports, scaling, inspecting logs, or managing machines and volumes with the `uc` CLI.
+- **unified-memory** — Share durable, inspectable context and handoffs between Claude, Codex, Hermes, Cursor, OpenCode, and other agents through the local ECC Memory Vault.
+- **unified-notifications-ops** — Operate notifications as one ECC-native workflow across GitHub, Linear, desktop alerts, hooks, and connected communication surfaces.
+- **verification-loop** — Run a six-phase verification of a Claude Code session's work — build, type check, lint, tests with coverage, security grep, and diff review — then produce a PASS/FAIL verification report.
+- **video-editing** — AI-assisted video editing workflows for cutting, structuring, and augmenting real footage.
+- **videodb** — Ingest, index, search, edit, and monitor video and audio with the VideoDB Python SDK — upload from files, URLs, or RTSP feeds, build spoken and scene indexes with timestamped search and playable clips, transcode and reframe, do timeline …
+- **visa-doc-translate** — Translate visa document images (bank deposit, employment, income, and retirement certificates; HEIC, PNG, or JPG) into English via OCR and produce a bilingual PDF pairing the original image with a formatted certified-style translation.
+- **vite-patterns** — Vite build tool patterns including config, plugins, HMR, env variables, proxy setup, SSR, library mode, dependency pre-bundling, and build optimization.
+- **vue-patterns** — Vue.js 3 Composition API patterns, component architecture, reactivity best practices, Pinia state management, Vue Router navigation, and Nuxt SSR patterns.
+- **windows-desktop-e2e** — E2E testing for Windows native desktop apps (WPF, WinForms, Win32/MFC, Qt) using pywinauto and Windows UI Automation.
+- **workspace-surface-audit** — Audit the active repo, MCP servers, plugins, connectors, env surfaces, and harness setup, then recommend the highest-value ECC-native skills, hooks, agents, and operator workflows.
+- **x-api** — X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics.
+
+## Also on your account (claude.ai plugins)
+
+Installed account-wide, so they work in chat, Cowork and Claude Code without this file: Claude for Legal plugins you enabled (e.g. ai-governance-legal), plus any of Superpowers, caveman, claude-code-setup and claude-security you installed from the plugin card.
