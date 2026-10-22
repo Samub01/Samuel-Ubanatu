@@ -30,7 +30,7 @@ Smaller plugins for Cowork and day-to-day use, built by
 | Plugin | Skills |
 |---|---|
 | `samuel-grc` | Governance, risk and compliance frameworks (36) |
-| `samuel-research` | Academic and market research (21) |
+| `samuel-research` | Academic research, scientific writing and statistics (67) |
 | `samuel-linkedin` | LinkedIn and email writing in Samuel's voice (12) |
 | `samuel-data-engineering` | dbt, Snowflake, Databricks and SQL databases (17) |
 

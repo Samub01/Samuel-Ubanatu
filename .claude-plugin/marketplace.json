@@ -17,7 +17,7 @@
     {
       "name": "samuel-research",
       "source": "./plugins/samuel-research",
-      "description": "Academic and market research: literature reviews, methodology, ethics review, grant writing, manuscript drafting, peer review, citations and recent-discussion research."
+      "description": "Academic and market research: literature reviews and triage, research gaps, methodology, experimental design and statistics, ethics review, grants, manuscript drafting and scientific writing, peer review, citations, Zotero, and removing AI-sounding prose."
     },
     {
       "name": "samuel-linkedin",
