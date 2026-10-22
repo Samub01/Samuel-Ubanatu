@@ -1,5 +1,5 @@
 # Regenerate docs/skills-catalog.md: python3 scripts/build-skills-catalog.py . docs/skills-catalog.md
-import os, re, sys, yaml
+import json, os, re, sys, yaml
 root = sys.argv[1]; out = sys.argv[2]
 S = os.path.join(root, ".claude/skills")
 GRC = "ccpa cis-controls cmmc csrd cyber-essentials dora dpdpa ear eu-ai-act eu-cra fedramp gdpr-compliance hipaa-compliance-grc ism iso27001 iso27701 iso42001 itar lgpd nis2 nist-800-53 nist-ai-rmf nist-csf nzism pci-compliance saudi-arabia-grc section-508 soc2 sox-itgc swift-csp tisax tprm tsa-compliance uae-grc vn-pdpl wcag".split()
@@ -15,6 +15,7 @@ GROUPS = [
  ("Marketing psychology", lambda n: n == "marketing-psychology"),
  ("Diagrams (anatomy)", lambda n: n == "anatomy"),
  ("OmniRoute AI gateway (needs an OmniRoute server)", lambda n: n.startswith("omni-") or n.startswith("cli-") or n == "config-codex-cli"),
+ *[(g, (lambda ns: (lambda n: n in ns))(set(v))) for g, v in json.load(open(os.path.join(root, "scripts/skill-groups.json"))).items()],
  ("ECC — engineering, agents, business & operations", lambda n: True),
 ]
 def desc(n):
@@ -37,7 +38,7 @@ for n in names:
     for g, f in GROUPS:
         if f(n): buckets[g].append(n); break
 L = ["# Samuel Ubanatu — Skills Catalog", "",
- f"Reference list of the {len(names)} skills installed in github.com/Samub01/Samuel-Ubanatu (generated 2026-10-21).", "",
+ f"Reference list of the {len(names)} skills installed in github.com/Samub01/Samuel-Ubanatu (generated 2026-10-22).", "",
  "## How to use this in Claude chat", "",
  "- These skills run natively in Claude Code (and Cowork, via the samuel-* plugins). In chat, this file tells Claude what methods and playbooks exist.",
  "- Ask by name or topic, e.g. *\"Use the approach of the `iso42001` skill to gap-assess our AI management system\"* or *\"Which of my skills fits a DPIA?\"*",
@@ -46,7 +47,7 @@ L = ["# Samuel Ubanatu — Skills Catalog", "",
  "## Contents", ""]
 for g, _ in GROUPS:
     if buckets[g]: L.append(f"- {g} ({len(buckets[g])})")
-CLI = set("anatomy last30days altimate-code obsidian-cli defuddle knap li-human".split())
+CLI = set("anatomy last30days altimate-code obsidian-cli defuddle knap li-human zotero-skills zotero-library-curator research-hub research-hub-multi-ai notebooklm-brief-verifier".split())
 for g, _ in GROUPS:
     if not buckets[g]: continue
     L += ["", f"## {g} ({len(buckets[g])})", ""]

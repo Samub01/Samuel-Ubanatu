@@ -1,0 +1,25 @@
+{
+  "skill": "research-hub-multi-ai",
+  "evals": [
+    {
+      "prompt": "Have Codex scaffold tests and Antigravity apply an approved metadata transform to a disjoint fixture directory in the same round.",
+      "expected_behavior": "Write a multi-task plan with disjoint ownership, Codex and Antigravity briefs, dependencies, exact result artifacts, and primary-model reconciliation. Do not execute leaves in the router."
+    },
+    {
+      "prompt": "Delegate this 200-line refactor to Codex.",
+      "expected_behavior": "Do not invoke the router for one delegate. Route directly to codex-delegate with a bounded brief and wrapper contract."
+    },
+    {
+      "prompt": "Generate a Traditional Chinese summary of this 8000-word paper.",
+      "expected_behavior": "Keep this single CJK/semantic task with the primary model. Do not route it to the bounded mechanical Antigravity leaf and do not invoke the multi-AI router."
+    },
+    {
+      "prompt": "The old Gemini delegate is installed, so use it with Codex for this round.",
+      "expected_behavior": "Refuse the archived leaf, verify supported executor health, and either re-plan with Codex/Antigravity within their scopes or report a blocker."
+    },
+    {
+      "prompt": "Run research-hub auto for agent-based modeling with the detected LLM CLI.",
+      "expected_behavior": "Treat this as one research-hub runtime operation, not a multi-AI plan; verify the CLI and use only a currently detected compatible backend."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Samuel Ubanatu — Skills Catalog
 
-Reference list of the 442 skills installed in github.com/Samub01/Samuel-Ubanatu (generated 2026-10-21).
+Reference list of the 665 skills installed in github.com/Samub01/Samuel-Ubanatu (generated 2026-10-22).
 
 ## How to use this in Claude chat
 
@@ -19,6 +19,9 @@ Reference list of the 442 skills installed in github.com/Samub01/Samuel-Ubanatu 
 - Marketing psychology (1)
 - Diagrams (anatomy) (1)
 - OmniRoute AI gateway (needs an OmniRoute server) (45)
+- Research workflow (research-hub, Zotero, academic writing) (15)
+- Writing, style & books (33)
+- Scientific & data-science (K-Dense) (175)
 - ECC — engineering, agents, business & operations (312)
 
 ## GRC & compliance frameworks (36)
@@ -174,6 +177,238 @@ Reference list of the 442 skills installed in github.com/Samub01/Samuel-Ubanatu 
 - **omni-usage-logs** *(CLI)* — Access detailed call logs and usage analytics.
 - **omni-version-manager** *(CLI)* — Install, start, stop, restart, and update embedded services (9Router, CLIProxyAPI).
 - **omni-webhooks** *(CLI)* — Register, list, test, and remove webhook endpoints.
+
+## Research workflow (research-hub, Zotero, academic writing) (15)
+
+- **academic-writing-skills** — Plan, outline, draft, review, revise, or proofread academic manuscripts, journal articles, theses, conference papers, abstracts, supplementary materials, and submission packages across disciplines and study designs.
+- **gap-to-topic** — Turn a research area into a go/no-go decision dossier for candidate thesis/proposal topics (zero or multiple justified options) — a 3-gate verdict (is the gap open?
+- **literature-triage-matrix** — Turn a list of papers (Zotero collection, Obsidian cluster, manual list) into a compact comparison matrix written to .research/literature_matrix.md, instead of generic per-paper summaries.
+- **notebooklm-brief-verifier** *(CLI)* — Compare a downloaded NotebookLM brief against the source bundle research-hub uploaded, and report missed sources, unsupported claims, contradictions, and recommended follow-up prompts.
+- **paper-memory-builder** — Convert a paper draft + figures + Zotero metadata into reusable .paper/claims.yml and .paper/figures.yml files so the academic-writing-skills skill can do writing, revision, and audit passes without re-reading the manuscript every time.
+- **paper-review** — Conduct reviewer-style, evidence-safe reviews of academic manuscripts across disciplines using progressive method, domain, review-round, and optional reviewer overlays.
+- **paper-summarize** — After research-hub ingests a cluster of cited papers, fill the per-paper Key Findings + Methodology + Relevance sections in BOTH Obsidian markdown and the Zotero child note.
+- **research-context-compressor** — Inspect a research repository and write a compact `.research/` workspace manifest (project_manifest.yml, experiment_matrix.yml, data_dictionary.yml) so future AI sessions can orient themselves without rescanning the whole repo.
+- **research-design-helper** — Guide a researcher through 5 Socratic segments — research question sharpening, expected mechanism, identifiability check, validation plan, risk register — and produce `.research/design_brief.md`.
+- **research-hub** *(CLI)* — Operate research-hub workflows for literature discovery, source ingest into Zotero/Obsidian/NotebookLM, dashboard inspection, and vault maintenance.
+- **research-hub-multi-ai** *(CLI)* — Research-domain router that writes `.coord/multi_ai_plan.md` when one round needs two or more bounded delegates and touches `.research/`, `.paper/`, Zotero, Obsidian, or NotebookLM artifacts.
+- **research-project-orienter** — Read the .research/ manifest files at a project root and produce a single orientation memo (research question, datasets, current stage, key entrypoints, evidence artifacts, open questions).
+- **research-workflow-orchestrator** — Run a resumable end-to-end research workflow that automates low-risk work, pauses at explicit human decision gates, records provenance, and routes each stage to the appropriate research-hub skill or MCP tool.
+- **zotero-library-curator** *(CLI)* — Audit and curate a Zotero library — find duplicate DOIs, orphan items missing required tags, propose collection rebinds, identify bloated or under-used collections, generate tag hygiene reports, emit preview-only cleanup plans.
+- **zotero-skills** *(CLI)* — Full CRUD on a Zotero library: search, add, update, tag, trash/restore, delete, merge duplicates, and attach PDFs.
+
+## Writing, style & books (33)
+
+- **ai-writing-detector** — Use when the user asks to detect, scan, audit, score, or flag AI-writing patterns without rewriting the text, including requests for a deterministic local detector result when the host can execute Node.
+- **app-store-opportunity-research** — Full-pipeline iOS App Store opportunity research.
+- **avoid-ai-writing** — Audit and rewrite content to remove AI writing patterns ("AI-isms").
+- **avoid-ai-writing-router** — Use when a request combines AI-writing audit, rewrite, file editing, voice preservation, false-positive interpretation, verification, or when the user invokes Avoid AI Writing without naming a mode.
+- **book-architect** — Design the structural and emotional architecture for nonfiction books.
+- **book-idea-validator** — Stress-test book concepts against existing research before committing to architecture.
+- **book-ideation** — Develop raw book ideas into structured nonfiction book concepts.
+- **book-market-research** — Assess commercial viability of book concepts for Amazon KDP self-publishing.
+- **book-research-assistant** — Plan, orchestrate, and validate deep research for nonfiction books.
+- **brainstorm** — Collaborative brainstorming partner for multi-session ideation projects.
+- **chapter-architect** — Plan and architect a single chapter at beat-level granularity.
+- **dhh-writing** — This skill should be used when writing in the distinctive style of David Heinemeier Hansson (DHH).
+- **ebook-concept-development** — Develop ebook ideas into structured concepts ready for architecture.
+- **ebook-discovery** — Surface ebook ideas you didn't know you had.
+- **every-style-editor** — This skill should be used when reviewing or editing copy to ensure adherence to Every's style guide.
+- **false-positive-reviewer** — Use when a user asks what AI-writing flags mean, whether detector output proves AI authorship, or wants a careful interpretation of possible false positives, especially for academic, hiring, publication, disciplinary, or other consequent…
+- **file-edit-in-place** — Use when the user names a local file and explicitly asks to clean, rewrite, humanize, or remove AI-writing patterns in that file itself, with minimal targeted edits and post-edit verification.
+- **ghost-writer** — Produce first drafts that match a writer's authentic voice using their Voice DNA Document.
+- **handoff** — Create a structured session handoff document for continuity across sessions.
+- **lead** — Run a project as the lead: write briefs, hand each one to a fresh Opus worker in Herdr, watch it, verify its work with your own probes, and report.
+- **pragmatic-writing** — This skill should be used when writing technical content in the style of Hunt/Thomas (The Pragmatic Programmer) and Joel Spolsky (Joel on Software).
+- **preservation-verifier** — Use when the user provides an original and rewritten version, asks whether a rewrite preserved protected content, or wants a deterministic check for code, frontmatter, quotes, tables, links, paths, numbers, headings, and residual AI-patt…
+- **project-wiki** — Build and keep a Karpathy-style LLM wiki inside a repo, as a project record or a research vault, with a schema, an index, a log, a lint, and a Quartz site on GitHub Pages.
+- **sciwrite-manuscript** — Structure a scientific paper section by section — tables and figures, Results, Methods, Introduction, Discussion, Abstract — following Stanford's Writing in the Sciences.
+- **sciwrite-outreach** — Communicate science to non-specialists: lay summaries, plain-language abstracts, press releases, science news stories, talking to journalists, presenting risk numbers honestly, interviewing a scientist, and using social media.
+- **sciwrite-process** — Plan and run the writing process for a scientific paper or thesis chapter — pre-writing and organisation, drafting fast without perfectionism, revision, and the final pre-submission checklist — following Stanford's Writing in the Sciences.
+- **sciwrite-proposals** — Write the documents an academic career runs on besides papers: narrative review articles, grant and fellowship applications (specific aims, research plan), letters of recommendation, and personal statements.
+- **sciwrite-prose** — Edit and tighten scientific or technical prose at the sentence and paragraph level, using the method taught in Stanford's Writing in the Sciences.
+- **sciwrite-publish** — Navigate publication: choosing a journal, the submission process, responding to reviewers after a revise-and-resubmit, performing a peer review yourself, authorship decisions and order, plagiarism and self-plagiarism, and spotting predat…
+- **voice-capture** — This skill should be used when extracting voice profiles from sample text, creating voice documentation, or matching a specific writing style.
+- **voice-preserving-rewriter** — Use when the user asks to rewrite, humanize, clean up, or remove AI-isms from text while preserving the writer's voice, facts, intent, structure, register, and protected material.
+- **writing-dna-discovery** — Capture a writer's voice DNA through collaborative interview and sample analysis.
+- **writing-orchestration** — This skill should be used when orchestrating complex writing workflows with multiple phases.
+
+## Scientific & data-science (K-Dense) (175)
+
+- **13c-metabolic-flux** — Estimates intracellular metabolic fluxes from steady-state carbon-13 isotope-tracing measurements using validated atom maps, mfapy isotope simulation, constrained multistart fitting, and flux-profile diagnostics.
+- **adaptyv** — Uses the Adaptyv Bio Foundry API and Python SDK to design protein characterization experiments, estimate costs, submit sequences, monitor laboratory progress, and retrieve results.
+- **aeon** — This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search.
+- **alphagenome** — Looks up precomputed AlphaGenome Atlas effects for any GRCh38 single-nucleotide variant (AVI score with Phred and 18 SHAP feature attributions, plus raw and quantile scores for RNA-seq, DNase, ATAC, ChIP-TF, ChIP-histone, CAGE, PRO-cap, …
+- **analytical-method-validation** — Plans, executes, and documents validation, verification, and transfer of analytical procedures under the governing framework - ICH Q2(R2) and Q14, USP <1220>/<1225>/<1226>, ICH M10 bioanalytical, CLSI EP, or ISO/IEC 17025.
+- **anndata** — Handles annotated matrices in single-cell analysis, .h5ad and Zarr files, and integration with the scverse ecosystem.
+- **arbor** — Applies Arbor Hypothesis Tree Refinement to research artifacts with repeatable evaluators, including model training, agent harnesses, data synthesis and benchmark optimization.
+- **arboreto** — Infers candidate gene regulatory networks from bulk or single-cell expression data using AertsLab Arboreto GRNBoost2 and GENIE3.
+- **astropy** — Core Python library for astronomy and astrophysics workflows that need Astropy APIs, including units/quantities, coordinates, FITS I/O, tables, time systems, WCS, and cosmology.
+- **autoskill** — Analyzes user-requested Screenpipe history windows to detect repeated research workflows, match existing scientific skills, and stage new skill drafts or composition recipes for review.
+- **benchling-integration** — Benchling Python SDK and REST API integration for registry entities, inventory, ELN entries, workflows, Benchling Apps, and Data Warehouse queries.
+- **bgpt-paper-search** — Searches BGPT scientific papers by topic or DOI and retrieves claim-level evidence extracted from full text, including experiments, reported statistics, scope, limitations, and provenance.
+- **bids** — Organizes, queries, validates, and converts Brain Imaging Data Structure (BIDS) datasets.
+- **biopython** — Provides Biopython workflows for sequence manipulation, file parsing (FASTA/GenBank/PDB), phylogenetics, and programmatic NCBI/PubMed access (Bio.Entrez).
+- **bioservices** — Provides a Python interface to bioinformatics services including UniProt, KEGG, ChEMBL, Reactome, QuickGO, and UniChem.
+- **bulk-rnaseq** — Prepares bulk RNA-seq FASTQ, Salmon, STAR or featureCounts output for gene-level differential expression.
+- **cantera** — Runs Cantera homogeneous chemical reactors and evaluates ignition delay with mechanism provenance, conservation checks, and numerical refinement.
+- **cellprofiler** — Runs reproducible CellProfiler microscopy pipelines for nuclear segmentation, cell counts, and per-object fluorescence measurements.
+- **cellxgene-census** — Queries the CZ CELLxGENE Census programmatically for versioned public single-cell and spatial transcriptomics data.
+- **cirq** — Google quantum computing framework.
+- **citation-management** — Comprehensive citation management for academic research.
+- **clinical-decision-support** — Prepares and validates research-only clinical decision-support evaluation, evidence-profile, cohort, survival, biomarker/model, privacy, and governance artifacts.
+- **clinical-reports** — Creates safety-bounded draft structures and runs local deterministic checks for clinical case, diagnostic, trial, safety, and aggregate research reports.
+- **cobrapy** — Performs constraint-based metabolic modeling with COBRApy, including FBA, pFBA, FVA, gene knockouts, flux sampling, growth media, production envelopes, gap filling, and SBML model validation for systems biology and metabolic engineering.
+- **consciousness-council** — Structures a multi-perspective council exercise for decisions, research trade-offs, and creative challenges.
+- **dask** — Scales pandas, NumPy, and custom Python research workflows beyond memory or across clusters with Dask.
+- **database-lookup** — Queries documented public database APIs with explicit endpoints, filters, pagination, and provenance.
+- **datalad** — Retrieves, versions, and publishes scientific datasets with DataLad and git-annex, and captures computational provenance with datalad run, rerun, and containers-run.
+- **datamol** — Pythonic wrapper around RDKit with simplified interface and sensible defaults.
+- **deepchem** — Builds molecular property prediction and MoleculeNet workflows with DeepChem, including SMILES featurization, scaffold or grouped holdouts, masked labels, graph models and explicit pretrained encoder transfer.
+- **deepspot-m** — Generates transcriptome-wide virtual spatial transcriptomics from H&E histology with DeepSpot-M.
+- **deeptools** — NGS analysis toolkit.
+- **depmap** — Retrieves and analyzes Cancer Dependency Map (DepMap) release data, including CRISPR Chronos gene effects, cancer model annotations, omics biomarkers, and PRISM drug sensitivity.
+- **dhdna-profiler** — Applies the DHDNA framework as an exploratory rubric for reasoning and writing patterns in supplied text.
+- **diffdock** — Predicts protein-small-molecule binding poses with DiffDock and DiffDock-L from PDB or sequence plus SMILES/SDF/MOL2.
+- **dnanexus-integration** — Builds and operates reproducible genomics workloads on DNAnexus with the dx CLI, dxpy, apps/applets, native workflows, dxCompiler, and Nextflow.
+- **esm** — Uses the Biohub esm Python SDK for ESM3 protein generation, ESMC embeddings, and ESMFold2 all-atom folding.
+- **etetoolkit** — Analyzes, manipulates, compares, annotates, and visualizes phylogenetic or other hierarchical trees with ETE 4.
+- **experimental-design** — Designs experiments and studies BEFORE data is collected — choosing a design, randomizing, blocking, and laying out treatment combinations so results are interpretable.
+- **exploratory-data-analysis** — Performs bounded, local exploratory analysis of explicitly supported scientific files.
+- **fictiv** — Operates Fictiv (app.fictiv.com), the on-demand manufacturing platform, end to end in the user's browser.
+- **flowio** — Reads, inspects, and writes Flow Cytometry Standard (FCS) 2.0, 3.0, and 3.1 files with FlowIO.
+- **flowkit** — Analyzes flow cytometry data with FlowKit, including spillover compensation, logicle and biexponential transforms, hierarchical gating, GatingML strategies, and supported FlowJo 10 workspaces.
+- **fluidsim** — Plans, configures, inspects, restarts, and analyzes bounded FluidSim computational-fluid-dynamics simulations with explicit numerical-validity and HPC safety checks.
+- **folklore-variant-evidence** — Retrieves ClinGen gene-disease validity assertions for a public gene or disease, and reviews source-linked public evidence and literature for one supported GRCh38 germline nuclear SNV or simple indel through Folklore Clinical Variant Int…
+- **generate-image** — Generates or edits images with AI models through the OpenRouter Image API (Gemini, Seedream, Recraft, GPT-Image, Riverflow).
+- **geniml** — Supports audited local Geniml genomic-interval workflows: validate BED and universe contracts, plan Region2Vec or scEmbed runs, inspect model/tokenizer compatibility, and assess consensus universes.
+- **genomic-coordinates** — Converts genomic intervals between coordinate conventions, normalises and compares variant representations, and detects assembly or contig-naming mismatches before they corrupt an analysis.
+- **genomic-intelligence** — Predicts regulatory features, gene structure, and expression directly from DNA sequence using Genomic Intelligence's hosted transformer DNA language models — no local GPU or model weights.
+- **geomaster** — Supports geospatial research workflows for remote sensing, vector and raster GIS, spatial statistics, terrain and network analysis, and machine learning for Earth observation.
+- **geopandas** — Guidance and local audit tools for Python workflows that directly use GeoPandas GeoSeries, GeoDataFrame, spatial operations, or vector-data I/O.
+- **get-available-resources** — Detects host inventory and effective CPU, memory, disk, scheduler, container, and accelerator limits when a user asks for resource-aware planning or before a clearly resource-sensitive local workload.
+- **gget** — Queries 20+ bioinformatics resources through CLI/Python.
+- **ginkgo-cloud-lab** — Guides protocol selection, input preparation, pricing checks, and browser ordering on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio).
+- **glycoengineering** — Analyzes and engineers protein glycosylation by scanning canonical N-glycosylation sequons, describing S/T-rich regions, checking curated glycan evidence, and preparing NetNGlyc, NetOGlyc and GlycoSHIELD workflows.
+- **gtars** — Supports Gtars for local genomic interval models and set algebra, overlaps and counts, consensus and coverage, tokenization, fragment processing, and refget/BEDbase planning across Python, Rust, and the CLI.
+- **histolab** — Extracts and preprocesses whole-slide histology image tiles with Histolab.
+- **hugging-science** — Discovers and evaluates scientific datasets, models, methodology posts, and Spaces through the Hugging Science catalog.
+- **hypogenic** — Plans and audits use of ChicagoHAI HypoGeniC/HypoRefine for LLM-assisted hypothesis generation from labeled text datasets.
+- **hypothesis-generation** — Formulates evidence-bounded scientific questions, candidate hypotheses, rival explanations, causal or associational claims, discriminating predictions, measurements, and preregistration-ready analysis plans.
+- **imaging-data-commons** — Queries and downloads public cancer imaging data from NCI Imaging Data Commons.
+- **infographics** — Creates and reviews infographics with Nano Banana 2 via OpenRouter.
+- **iso-standards-readiness** — Prepares and structurally reviews readiness evidence for ISO management-system and laboratory-competence standards - ISO 13485 medical device QMS, ISO 14971 device risk management, ISO/IEC 17025 testing and calibration laboratories, and …
+- **kd-exa-search** — Searches scientific and technical web content with Exa and extracts page or PDF text from URLs in batches.
+- **kd-literature-review** — Conducts systematic, scoping, and narrative literature reviews using PubMed, arXiv, bioRxiv, Semantic Scholar, and other appropriate sources.
+- **kd-peer-review** — Prepares evidence-bounded, constructive peer-review drafts and structured manuscript assessments.
+- **lab-hardware-cad** — Designs custom laboratory hardware as parametric build123d models and exports fabrication artifacts as STEP, STL, and DXF files - microfluidic chips and molds, optomechanical mounts and breadboard adapters, cuvette and microplate holders…
+- **labarchive-integration** — Integrates with the official LabArchives ELN REST-like API and Inventory API v1.
+- **lamindb** — Manages biological datasets and models with LaminDB, including artifact registration, lineage tracking, schema validation, Bionty ontology annotation, query/search, collections, branches, storage, and workflow integrations.
+- **latchbio-integration** — Builds, registers, debugs, and operates bioinformatics workflows on Latch using the Python SDK, CLI, Latch Data and Registry, Nextflow, Snakemake, programmatic execution, and Latch MCP.
+- **latex-posters** — Creates research posters in LaTeX using beamerposter, tikzposter, or baposter.
+- **liteparse** — Local document and PDF parsing that returns spatial text with bounding boxes.
+- **mageck** — Analyzes pooled CRISPR screen FASTQ reads and guide-count matrices with MAGeCK, validates guide libraries and contrasts, measures replicate and library QC, and produces gene hit rankings with effect sizes and FDR.
+- **marine-carbonate-chemistry** — Solves seawater carbonate chemistry with PyCO2SYS for chemical oceanography, ocean acidification, and marine carbon-cycle research.
+- **markdown-mermaid-writing** — Writes scientific Markdown documentation and Mermaid diagrams for workflows, relationships, timelines, and schemas.
+- **market-research-reports** — Builds evidence-traceable market research reports and assumption-driven market sizing or forecast scenarios.
+- **markitdown** — Converts heterogeneous documents and selected URIs to Markdown with Microsoft MarkItDown for text analysis, search, and LLM/RAG ingestion.
+- **matchms** — Processes, cleans, compares, and searches tandem mass spectra with matchms.
+- **matlab** — Builds, reviews, migrates, and plans MATLAB or GNU Octave numerical workflows.
+- **matplotlib** — Creates and customizes scientific plots with Matplotlib.
+- **medchem** — Applies medicinal chemistry filters for compound triage, using drug-likeness rules (Lipinski, Veber, CNS), structural alert catalogs (PAINS, NIBR, ChEMBL), complexity metrics, and the medchem query language for library filtering.
+- **modal** — Modal is a serverless cloud platform for running Python on demand, including on-demand GPUs.
+- **molecular-dynamics** — Runs and analyzes molecular dynamics simulations with OpenMM and MDAnalysis.
+- **molfeat** — Featurizes small molecules with Molfeat for QSAR/QSPR, chemical similarity, virtual screening, and molecular ML.
+- **ncats-arax** — Queries the NCATS Translator ARAX production API for bounded, typed, provenance-rich one-hop and endpoint-pinned two-hop biomedical knowledge-graph relationships.
+- **networkx** — Creates, analyzes, and visualizes complex networks and graphs in Python with NetworkX.
+- **neurokit2** — Builds and audits reproducible NeuroKit2 research workflows for physiological time-series preprocessing, event/interval analysis, multimodal alignment, variability, and complexity.
+- **neuropixels-analysis** — Analyzes Neuropixels extracellular recordings end-to-end with SpikeInterface.
+- **nextflow** — Builds, runs, and debugs Nextflow DSL2 pipelines and nf-core workflows.
+- **nmrglue** — Processes calibrated one-dimensional complex NMR free-induction decays with nmrglue into phased spectra, peak candidates, and signed integration regions.
+- **nwb-conversion** — Converts neuroscience acquisition data to Neurodata Without Borders files with NeuroConv and PyNWB, preserves metadata and timebases, checks evidence-based clock alignment, and produces schema validation, NWB Inspector findings and round…
+- **omero-integration** — Inspects and automates microscopy data workflows against OMERO.server with omero-py, BlitzGateway, OMERO CLI, tables, annotations, ROIs, rendering, and documented OMERO.web APIs.
+- **onekgpd** — Queries the 1000 Genomes Project dataset (3,202 whole-genome-sequenced individuals, GRCh38) at the level of individual participants.
+- **ontology-term-resolution** — Resolves free-text scientific labels to ontology term IDs and validates existing CURIEs against the EBI Ontology Lookup Service (OLS4).
+- **open-notebook** — Organizes research with the self-hosted Open Notebook alternative to NotebookLM.
+- **openpiv** — Performs Particle Image Velocimetry (PIV) analysis with OpenPIV.
+- **opentrons-integration** — Authors, reviews, migrates, simulates, and troubleshoots official Opentrons Python Protocol API v2 protocols for Flex and OT-2 robots.
+- **optimize-for-gpu** — GPU-accelerates scientific Python on NVIDIA hardware and verifies that the result is correct and faster.
+- **pacsomatic** — Prepares and launches nf-core/pacsomatic matched tumor-normal PacBio HiFi genomics workflows from unaligned BAM inputs.
+- **paper-lookup** — Searches 18 scholarly APIs for papers, preprints, citations, open-access full text, repository records, and journal OA status, and returns results with reproducible provenance.
+- **paperzilla** — Reads projects, searches project feeds, and retrieves recommendations and canonical papers in Paperzilla through the pz CLI.
+- **parallel-web** — Uses Parallel CLI for web search, URL extraction, deep research, structured data enrichment, entity discovery, and recurring web monitoring.
+- **pathml** — Supports local computational pathology research with PathML: slide loading and tiling, preprocessing and QC, h5path storage, multiplex quantification, spatial graphs, and bounded model inference.
+- **pathogen-variant-surveillance** — Queries public GenSpectrum LAPIS data for pathogen genomic surveillance, current lineage nomenclature, weekly sequence proportions, reporting delays, and descriptive mutation frequencies.
+- **pathway-enrichment** — Performs pathway and gene-set enrichment analysis on gene lists or ranked gene data and interprets the results.
+- **pennylane** — Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows.
+- **phylogenetics** — Builds and analyzes phylogenetic trees using MAFFT multiple sequence alignment, IQ-TREE maximum likelihood with ModelFinder and branch support, and FastTree approximate inference.
+- **pkpd-modeling** — Pharmacokinetic and pharmacodynamic modelling and simulation - non-compartmental analysis, compartmental and population PK, PK/PD and exposure-response, TMDD, PBPK orientation, bioequivalence, allometric scaling and first-in-human dose, …
+- **polars** — High-performance DataFrame library for Python ETL, analytics, and pandas migration.
+- **polars-bio** — Performs genomic interval overlap, nearest, merge, coverage, complement and subtraction on Polars DataFrames, and reads or writes BED, VCF, BCF, BAM, CRAM, GFF, GTF, FASTA and FASTQ data.
+- **pptx-posters** — Creates and audits editable scientific posters in macro-free PowerPoint (.pptx) from author-approved local content and assets.
+- **primekg** — Queries a pinned Precision Medicine Knowledge Graph (PrimeKG) CSV for typed gene, drug, disease, and phenotype nodes, direct associations, disease context, and one- or two-hop paths.
+- **primer-design** — Designs and audits PCR and RT-qPCR primers with Primer3, explicit thermodynamic conditions, reference-based off-target amplification searches, and traceable sequence coordinates.
+- **protocolsio-integration** — Reads, validates, and safely exports protocols.io data with current official REST/MCP contracts, or creates non-executing mutation plans.
+- **pufferlib** — Version-aware guidance for PufferLib reinforcement-learning environments, vectorization, policies, PuffeRL training, evaluation, and safe checkpoint review.
+- **pybamm** — Simulates lithium-ion battery charge, discharge and rest experiments with PyBaMM, records parameter-set provenance, checks mesh and solver sensitivity, and compares predicted voltage curves with measured cycling data.
+- **pycalphad** — Computes finite-temperature CALPHAD equilibria, phase fractions, and phase compositions from thermodynamic TDB databases using pycalphad.
+- **pydeseq2** — Performs bulk RNA-seq differential expression analysis with PyDESeq2, including count validation, formula designs, explicit contrasts, Wald tests, FDR correction, coefficient-matched LFC shrinkage, and result visualization.
+- **pydicom** — Reads, inspects, writes, transforms, and preflights local DICOM datasets and pixel data.
+- **pyhealth** — Builds and validates PyHealth clinical machine-learning pipelines for EHR, signals, imaging, and medical codes.
+- **pylabrobot** — Develops and reviews PyLabRobot lab-automation resources, liquid-handling plans, offline simulations, and supported-device integrations.
+- **pymatgen** — Analyzes, validates, converts, and transforms materials structures and computed materials data with pymatgen.
+- **pymc** — Builds and checks Bayesian models with PyMC, including hierarchical models, NUTS MCMC, variational inference, mutable-data predictions, posterior predictive checks, diagnostics, and PSIS-LOO model comparison.
+- **pymoo** — Solves and validates single-, multi-, and many-objective optimization with pymoo, including NSGA-II, NSGA-III, MOEA/D, constraints, Pareto approximations, reference directions, and ZDT/DTLZ benchmarks for engineering and research problems.
+- **pyopenms** — Processes mass spectrometry data with pyOpenMS.
+- **pysam** — Provides Python/HTSlib workflows for genomic files.
+- **pytdc** — Provides Therapeutics Data Commons workflows through PyTDC for registry discovery, dataset access, task-aware splits, evaluator metrics, benchmark groups, and bounded molecular-oracle scoring.
+- **pytorch-lightning** — Deep learning framework (PyTorch Lightning / lightning package).
+- **pyzotero** — Manages Zotero reference libraries using the pyzotero Python client: retrieves, creates, updates, and deletes items, collections, tags, and attachments via the Zotero Web API v3 or local API.
+- **qiime2-amplicon** — Processes paired-end 16S amplicon reads into QIIME 2 ASVs and taxonomy with retained artifact provenance.
+- **qiskit** — Builds, simulates, transpiles, and executes quantum circuits with Qiskit and IBM Quantum Runtime.
+- **qutip** — Simulate and audit closed and open quantum-system models with QuTiP 5, including deterministic, trajectory, steady-state, spectral, and phase-space workflows.
+- **rdkit** — Cheminformatics toolkit for fine-grained molecular control.
+- **relion** — Validates and executes RELION single-particle cryo-EM refinement and half-map postprocessing.
+- **relsa-severity-assessment** — Supports multivariate severity assessment and exploratory endpoint-time score forecasting for laboratory animal studies using the RELSA (RELative Severity Assessment) score and ARIMA-based foRcast forecasting.
+- **research-grants** — Supports research proposal preparation and review for NSF, NIH, DOE, DARPA, and Taiwan NSTC, including opportunity-specific requirements, aims, review criteria, budgets, broader impacts, forms, and resubmissions.
+- **research-lookup** — Compiles current scholarly evidence for a scientific manuscript or research brief when the user explicitly asks to gather literature, references, background evidence, competing findings, or a manuscript research packet.
+- **rowan** — Rowan is a cloud-native molecular modeling and medicinal-chemistry workflow platform with a Python API.
+- **scanpy** — Performs Scanpy single-cell RNA-seq QC, normalization, HVG selection, PCA/UMAP/t-SNE, clustering, exploratory marker ranking, pseudobulk preparation, visualization, and Seurat or SingleCellExperiment RDS conversion to h5ad.
+- **scholar-evaluation** — Provides qualitative-first, evidence-traceable developmental review of scholarly works and audit low-stakes research-assessment rubrics with optional local quality controls.
+- **scientific-brainstorming** — Facilitates evidence-aware scientific ideation with independent generation, structured discussion, explicit assumptions, transparent evaluation, adversarial review, and decision logs.
+- **scientific-critical-thinking** — Evaluates scientific claims and evidence quality.
+- **scientific-schematics** — Generates scientific diagram drafts using Nano Banana 2 AI with smart iterative refinement.
+- **scientific-slides** — Builds slide decks and presentations for research talks.
+- **scientific-visualization** — Creates and audits truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly.
+- **scientific-writing** — Drafts, revises, and audits scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountability, confidentiality controls, and local consistency checks.
+- **scikit-bio** — Biological data toolkit.
+- **scikit-learn** — Supports machine learning in Python with scikit-learn.
+- **scikit-survival** — Builds, evaluates, and audits right-censored or competing-risk survival workflows with scikit-survival, including leakage-safe preprocessing, model selection, probability prediction, and censoring-aware metrics.
+- **scvelo** — Performs RNA velocity analysis with scVelo from spliced and unspliced single-cell RNA counts.
+- **scvi-tools** — Fits probabilistic models for single-cell omics, including scVI batch integration, scANVI annotation, totalVI CITE-seq, MultiVI RNA/ATAC integration, and posterior differential expression.
+- **seaborn** — Creates Seaborn statistical visualizations with pandas integration for distributions, relationships, categorical comparisons, regression displays, pair plots, and heatmaps.
+- **shap** — Explain and audit machine-learning predictions with SHAP.
+- **simpy** — Builds, inspects, tests, and analyzes bounded process-based discrete-event simulations with SimPy.
+- **stable-baselines3** — Trains and evaluates single-agent reinforcement learning with Stable Baselines3 (PPO, SAC, DQN, TD3, DDPG, A2C), Gymnasium custom environments, vectorized rollouts, callbacks, and checkpoint normalization.
+- **statistical-analysis** — Guided statistical analysis for research data - test selection, assumption checking, effect sizes, power analysis, Bayesian alternatives, and APA-formatted reporting.
+- **statistical-power** — Calculates sample sizes and statistical power for study planning.
+- **statsmodels** — Fits and diagnoses Python statistical models including OLS, GLM, discrete and mixed models, ARIMA and SARIMAX.
+- **sympy** — Performs exact symbolic mathematics with SymPy for algebra, calculus, equation solving, symbolic linear algebra, physics, and lambdify or LaTeX code generation.
+- **tamarind** — Provides access to a collection of open-source molecular design and structural biology tools on the Tamarind Bio platform, via its REST API or MCP server — no local GPUs required.
+- **tellurium** — Simulates biochemical kinetic models from SBML or Antimony with Tellurium and libRoadRunner, checks model units, compares deterministic parameter perturbations, and exports and replays SBML plus SED-ML COMBINE archives.
+- **tiledbvcf** — Stores and retrieves genomic variant calls with TileDB-VCF.
+- **timesfm-forecasting** — Performs zero-shot time-series forecasting with Google's TimesFM, including regular-grid CSV preparation, quantile forecasts, XReg covariates, and held-out evaluation.
+- **torch-geometric** — Supports PyTorch Geometric (PyG) graph neural networks — node/link/graph classification, message passing (GCN, GAT, GraphSAGE, GIN), heterogeneous graphs, neighbor sampling, and custom datasets.
+- **torchdrug** — Builds and troubleshoots TorchDrug 0.2.1 workflows for molecular graphs, property prediction, self-supervised pretraining, molecule generation, retrosynthesis, protein representation learning, and knowledge graph reasoning.
+- **transformers** — Hugging Face Transformers for loading Hub models, running pipeline inference, text generation, and Trainer fine-tuning on NLP, vision, audio, and multimodal tasks.
+- **treatment-plans** — Formats and structurally validates local treatment-plan documentation after clinical decisions have already been supplied and verified by authorized licensed professionals.
+- **umap-learn** — Applies UMAP-learn to nonlinear dimensionality reduction, 2D/3D embeddings, clustering preprocessing, supervised or semi-supervised UMAP, DensMAP, AlignedUMAP, and Parametric UMAP workflows.
+- **uncertainty-and-units** — Tracks physical units and propagates measurement uncertainty in scientific calculations using pint and uncertainties.
+- **usfiscaldata** — Queries the U.S.
+- **vaex** — Processes large tabular scientific datasets with Vaex expressions, filtered views, streamed statistics, binned visualizations, and file conversion.
+- **venue-templates** — Prepares journal manuscripts, conference papers, research posters, and grant documents using venue-specific formatting guidance and bundled LaTeX scaffolds.
+- **waypoint-bio** — Supports work with Outpost Bio's open microbiome foundation models - the Waypoint checkpoints (Waypoint-6m, Waypoint-45m, Waypoint-170m), the Atlas pretraining corpus, the Compass eight-task benchmark, or the `waypoint` CLI from the `way…
+- **what-if-oracle** — Supports structured what-if scenario analysis for research planning, experimental contingencies, and scientific project decisions.
+- **zarr-python** — Stores and queries chunked N-D scientific arrays with Zarr-Python 3, including codecs, sharding, S3/GCS storage, and NumPy/Dask/Xarray integration.
 
 ## ECC — engineering, agents, business & operations (312)
 
