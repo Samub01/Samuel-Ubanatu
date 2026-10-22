@@ -1,6 +1,6 @@
 # Samuel Ubanatu — Skills Catalog
 
-Reference list of the 442 skills installed in github.com/Samub01/Samuel-Ubanatu (generated 2026-10-21).
+Reference list of the 537 skills installed in github.com/Samub01/Samuel-Ubanatu (generated 2026-10-22).
 
 ## How to use this in Claude chat
 
@@ -19,6 +19,9 @@ Reference list of the 442 skills installed in github.com/Samub01/Samuel-Ubanatu 
 - Marketing psychology (1)
 - Diagrams (anatomy) (1)
 - OmniRoute AI gateway (needs an OmniRoute server) (45)
+- Research workflow (research-hub, Zotero, academic writing) (15)
+- Writing, style & books (33)
+- Scientific methods & data science (K-Dense) (47)
 - ECC — engineering, agents, business & operations (312)
 
 ## GRC & compliance frameworks (36)
@@ -174,6 +177,110 @@ Reference list of the 442 skills installed in github.com/Samub01/Samuel-Ubanatu 
 - **omni-usage-logs** *(CLI)* — Access detailed call logs and usage analytics.
 - **omni-version-manager** *(CLI)* — Install, start, stop, restart, and update embedded services (9Router, CLIProxyAPI).
 - **omni-webhooks** *(CLI)* — Register, list, test, and remove webhook endpoints.
+
+## Research workflow (research-hub, Zotero, academic writing) (15)
+
+- **academic-writing-skills** — Plan, outline, draft, review, revise, or proofread academic manuscripts, journal articles, theses, conference papers, abstracts, supplementary materials, and submission packages across disciplines and study designs.
+- **gap-to-topic** — Turn a research area into a go/no-go decision dossier for candidate thesis/proposal topics (zero or multiple justified options) — a 3-gate verdict (is the gap open?
+- **literature-triage-matrix** — Turn a list of papers (Zotero collection, Obsidian cluster, manual list) into a compact comparison matrix written to .research/literature_matrix.md, instead of generic per-paper summaries.
+- **notebooklm-brief-verifier** *(CLI)* — Compare a downloaded NotebookLM brief against the source bundle research-hub uploaded, and report missed sources, unsupported claims, contradictions, and recommended follow-up prompts.
+- **paper-memory-builder** — Convert a paper draft + figures + Zotero metadata into reusable .paper/claims.yml and .paper/figures.yml files so the academic-writing-skills skill can do writing, revision, and audit passes without re-reading the manuscript every time.
+- **paper-review** — Conduct reviewer-style, evidence-safe reviews of academic manuscripts across disciplines using progressive method, domain, review-round, and optional reviewer overlays.
+- **paper-summarize** — After research-hub ingests a cluster of cited papers, fill the per-paper Key Findings + Methodology + Relevance sections in BOTH Obsidian markdown and the Zotero child note.
+- **research-context-compressor** — Inspect a research repository and write a compact `.research/` workspace manifest (project_manifest.yml, experiment_matrix.yml, data_dictionary.yml) so future AI sessions can orient themselves without rescanning the whole repo.
+- **research-design-helper** — Guide a researcher through 5 Socratic segments — research question sharpening, expected mechanism, identifiability check, validation plan, risk register — and produce `.research/design_brief.md`.
+- **research-hub** *(CLI)* — Operate research-hub workflows for literature discovery, source ingest into Zotero/Obsidian/NotebookLM, dashboard inspection, and vault maintenance.
+- **research-hub-multi-ai** *(CLI)* — Research-domain router that writes `.coord/multi_ai_plan.md` when one round needs two or more bounded delegates and touches `.research/`, `.paper/`, Zotero, Obsidian, or NotebookLM artifacts.
+- **research-project-orienter** — Read the .research/ manifest files at a project root and produce a single orientation memo (research question, datasets, current stage, key entrypoints, evidence artifacts, open questions).
+- **research-workflow-orchestrator** — Run a resumable end-to-end research workflow that automates low-risk work, pauses at explicit human decision gates, records provenance, and routes each stage to the appropriate research-hub skill or MCP tool.
+- **zotero-library-curator** *(CLI)* — Audit and curate a Zotero library — find duplicate DOIs, orphan items missing required tags, propose collection rebinds, identify bloated or under-used collections, generate tag hygiene reports, emit preview-only cleanup plans.
+- **zotero-skills** *(CLI)* — Full CRUD on a Zotero library: search, add, update, tag, trash/restore, delete, merge duplicates, and attach PDFs.
+
+## Writing, style & books (33)
+
+- **ai-writing-detector** — Use when the user asks to detect, scan, audit, score, or flag AI-writing patterns without rewriting the text, including requests for a deterministic local detector result when the host can execute Node.
+- **app-store-opportunity-research** — Full-pipeline iOS App Store opportunity research.
+- **avoid-ai-writing** — Audit and rewrite content to remove AI writing patterns ("AI-isms").
+- **avoid-ai-writing-router** — Use when a request combines AI-writing audit, rewrite, file editing, voice preservation, false-positive interpretation, verification, or when the user invokes Avoid AI Writing without naming a mode.
+- **book-architect** — Design the structural and emotional architecture for nonfiction books.
+- **book-idea-validator** — Stress-test book concepts against existing research before committing to architecture.
+- **book-ideation** — Develop raw book ideas into structured nonfiction book concepts.
+- **book-market-research** — Assess commercial viability of book concepts for Amazon KDP self-publishing.
+- **book-research-assistant** — Plan, orchestrate, and validate deep research for nonfiction books.
+- **brainstorm** — Collaborative brainstorming partner for multi-session ideation projects.
+- **chapter-architect** — Plan and architect a single chapter at beat-level granularity.
+- **dhh-writing** — This skill should be used when writing in the distinctive style of David Heinemeier Hansson (DHH).
+- **ebook-concept-development** — Develop ebook ideas into structured concepts ready for architecture.
+- **ebook-discovery** — Surface ebook ideas you didn't know you had.
+- **every-style-editor** — This skill should be used when reviewing or editing copy to ensure adherence to Every's style guide.
+- **false-positive-reviewer** — Use when a user asks what AI-writing flags mean, whether detector output proves AI authorship, or wants a careful interpretation of possible false positives, especially for academic, hiring, publication, disciplinary, or other consequent…
+- **file-edit-in-place** — Use when the user names a local file and explicitly asks to clean, rewrite, humanize, or remove AI-writing patterns in that file itself, with minimal targeted edits and post-edit verification.
+- **ghost-writer** — Produce first drafts that match a writer's authentic voice using their Voice DNA Document.
+- **handoff** — Create a structured session handoff document for continuity across sessions.
+- **lead** — Run a project as the lead: write briefs, hand each one to a fresh Opus worker in Herdr, watch it, verify its work with your own probes, and report.
+- **pragmatic-writing** — This skill should be used when writing technical content in the style of Hunt/Thomas (The Pragmatic Programmer) and Joel Spolsky (Joel on Software).
+- **preservation-verifier** — Use when the user provides an original and rewritten version, asks whether a rewrite preserved protected content, or wants a deterministic check for code, frontmatter, quotes, tables, links, paths, numbers, headings, and residual AI-patt…
+- **project-wiki** — Build and keep a Karpathy-style LLM wiki inside a repo, as a project record or a research vault, with a schema, an index, a log, a lint, and a Quartz site on GitHub Pages.
+- **sciwrite-manuscript** — Structure a scientific paper section by section — tables and figures, Results, Methods, Introduction, Discussion, Abstract — following Stanford's Writing in the Sciences.
+- **sciwrite-outreach** — Communicate science to non-specialists: lay summaries, plain-language abstracts, press releases, science news stories, talking to journalists, presenting risk numbers honestly, interviewing a scientist, and using social media.
+- **sciwrite-process** — Plan and run the writing process for a scientific paper or thesis chapter — pre-writing and organisation, drafting fast without perfectionism, revision, and the final pre-submission checklist — following Stanford's Writing in the Sciences.
+- **sciwrite-proposals** — Write the documents an academic career runs on besides papers: narrative review articles, grant and fellowship applications (specific aims, research plan), letters of recommendation, and personal statements.
+- **sciwrite-prose** — Edit and tighten scientific or technical prose at the sentence and paragraph level, using the method taught in Stanford's Writing in the Sciences.
+- **sciwrite-publish** — Navigate publication: choosing a journal, the submission process, responding to reviewers after a revise-and-resubmit, performing a peer review yourself, authorship decisions and order, plagiarism and self-plagiarism, and spotting predat…
+- **voice-capture** — This skill should be used when extracting voice profiles from sample text, creating voice documentation, or matching a specific writing style.
+- **voice-preserving-rewriter** — Use when the user asks to rewrite, humanize, clean up, or remove AI-isms from text while preserving the writer's voice, facts, intent, structure, register, and protected material.
+- **writing-dna-discovery** — Capture a writer's voice DNA through collaborative interview and sample analysis.
+- **writing-orchestration** — This skill should be used when orchestrating complex writing workflows with multiple phases.
+
+## Scientific methods & data science (K-Dense) (47)
+
+- **aeon** — This skill should be used for time series machine learning tasks including classification, regression, clustering, forecasting, anomaly detection, segmentation, and similarity search.
+- **bgpt-paper-search** — Searches BGPT scientific papers by topic or DOI and retrieves claim-level evidence extracted from full text, including experiments, reported statistics, scope, limitations, and provenance.
+- **citation-management** — Comprehensive citation management for academic research.
+- **clinical-decision-support** — Prepares and validates research-only clinical decision-support evaluation, evidence-profile, cohort, survival, biomarker/model, privacy, and governance artifacts.
+- **clinical-reports** — Creates safety-bounded draft structures and runs local deterministic checks for clinical case, diagnostic, trial, safety, and aggregate research reports.
+- **consciousness-council** — Structures a multi-perspective council exercise for decisions, research trade-offs, and creative challenges.
+- **database-lookup** — Queries documented public database APIs with explicit endpoints, filters, pagination, and provenance.
+- **experimental-design** — Designs experiments and studies BEFORE data is collected — choosing a design, randomizing, blocking, and laying out treatment combinations so results are interpretable.
+- **exploratory-data-analysis** — Performs bounded, local exploratory analysis of explicitly supported scientific files.
+- **hypothesis-generation** — Formulates evidence-bounded scientific questions, candidate hypotheses, rival explanations, causal or associational claims, discriminating predictions, measurements, and preregistration-ready analysis plans.
+- **infographics** — Creates and reviews infographics with Nano Banana 2 via OpenRouter.
+- **iso-standards-readiness** — Prepares and structurally reviews readiness evidence for ISO management-system and laboratory-competence standards - ISO 13485 medical device QMS, ISO 14971 device risk management, ISO/IEC 17025 testing and calibration laboratories, and …
+- **kd-exa-search** — Searches scientific and technical web content with Exa and extracts page or PDF text from URLs in batches.
+- **kd-literature-review** — Conducts systematic, scoping, and narrative literature reviews using PubMed, arXiv, bioRxiv, Semantic Scholar, and other appropriate sources.
+- **kd-peer-review** — Prepares evidence-bounded, constructive peer-review drafts and structured manuscript assessments.
+- **latex-posters** — Creates research posters in LaTeX using beamerposter, tikzposter, or baposter.
+- **markdown-mermaid-writing** — Writes scientific Markdown documentation and Mermaid diagrams for workflows, relationships, timelines, and schemas.
+- **market-research-reports** — Builds evidence-traceable market research reports and assumption-driven market sizing or forecast scenarios.
+- **markitdown** — Converts heterogeneous documents and selected URIs to Markdown with Microsoft MarkItDown for text analysis, search, and LLM/RAG ingestion.
+- **matplotlib** — Creates and customizes scientific plots with Matplotlib.
+- **networkx** — Creates, analyzes, and visualizes complex networks and graphs in Python with NetworkX.
+- **paper-lookup** — Searches 18 scholarly APIs for papers, preprints, citations, open-access full text, repository records, and journal OA status, and returns results with reproducible provenance.
+- **polars** — High-performance DataFrame library for Python ETL, analytics, and pandas migration.
+- **pptx-posters** — Creates and audits editable scientific posters in macro-free PowerPoint (.pptx) from author-approved local content and assets.
+- **pyhealth** — Builds and validates PyHealth clinical machine-learning pipelines for EHR, signals, imaging, and medical codes.
+- **pymc** — Builds and checks Bayesian models with PyMC, including hierarchical models, NUTS MCMC, variational inference, mutable-data predictions, posterior predictive checks, diagnostics, and PSIS-LOO model comparison.
+- **research-grants** — Supports research proposal preparation and review for NSF, NIH, DOE, DARPA, and Taiwan NSTC, including opportunity-specific requirements, aims, review criteria, budgets, broader impacts, forms, and resubmissions.
+- **research-lookup** — Compiles current scholarly evidence for a scientific manuscript or research brief when the user explicitly asks to gather literature, references, background evidence, competing findings, or a manuscript research packet.
+- **scholar-evaluation** — Provides qualitative-first, evidence-traceable developmental review of scholarly works and audit low-stakes research-assessment rubrics with optional local quality controls.
+- **scientific-brainstorming** — Facilitates evidence-aware scientific ideation with independent generation, structured discussion, explicit assumptions, transparent evaluation, adversarial review, and decision logs.
+- **scientific-critical-thinking** — Evaluates scientific claims and evidence quality.
+- **scientific-schematics** — Generates scientific diagram drafts using Nano Banana 2 AI with smart iterative refinement.
+- **scientific-slides** — Builds slide decks and presentations for research talks.
+- **scientific-visualization** — Creates and audits truthful, accessible, publication-ready scientific figures with Matplotlib, Seaborn, or Plotly.
+- **scientific-writing** — Drafts, revises, and audits scientific manuscripts or reports with explicit evidence provenance, reporting-guideline coverage, authorship accountability, confidentiality controls, and local consistency checks.
+- **scikit-learn** — Supports machine learning in Python with scikit-learn.
+- **scikit-survival** — Builds, evaluates, and audits right-censored or competing-risk survival workflows with scikit-survival, including leakage-safe preprocessing, model selection, probability prediction, and censoring-aware metrics.
+- **seaborn** — Creates Seaborn statistical visualizations with pandas integration for distributions, relationships, categorical comparisons, regression displays, pair plots, and heatmaps.
+- **shap** — Explain and audit machine-learning predictions with SHAP.
+- **statistical-analysis** — Guided statistical analysis for research data - test selection, assumption checking, effect sizes, power analysis, Bayesian alternatives, and APA-formatted reporting.
+- **statistical-power** — Calculates sample sizes and statistical power for study planning.
+- **statsmodels** — Fits and diagnoses Python statistical models including OLS, GLM, discrete and mixed models, ARIMA and SARIMAX.
+- **timesfm-forecasting** — Performs zero-shot time-series forecasting with Google's TimesFM, including regular-grid CSV preparation, quantile forecasts, XReg covariates, and held-out evaluation.
+- **treatment-plans** — Formats and structurally validates local treatment-plan documentation after clinical decisions have already been supplied and verified by authorized licensed professionals.
+- **uncertainty-and-units** — Tracks physical units and propagates measurement uncertainty in scientific calculations using pint and uncertainties.
+- **venue-templates** — Prepares journal manuscripts, conference papers, research posters, and grant documents using venue-specific formatting guidance and bundled LaTeX scaffolds.
+- **what-if-oracle** — Supports structured what-if scenario analysis for research planning, experimental contingencies, and scientific project decisions.
 
 ## ECC — engineering, agents, business & operations (312)
 
